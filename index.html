@@ -586,45 +586,6 @@
     }
     .credentials-list strong { color: var(--ink-900); font-weight: 600; }
 
-    /* ========== UNVALIDATED / TO CONFIRM ========== */
-    .tbd {
-      background: #FFF3CD;
-      color: #7A5A00;
-      padding: 1px 8px;
-      border-radius: 4px;
-      font-size: 0.92em;
-      font-weight: 600;
-      border: 1px dashed #D4A82A;
-      white-space: nowrap;
-    }
-    .tbd-block {
-      background: #FFF8E1;
-      border: 1px dashed #D4A82A;
-      border-radius: var(--radius-card);
-      padding: 16px 20px;
-      margin: 12px 0;
-      color: #5A4300;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-    .tbd-block strong { color: #7A5A00; }
-    .section-teal .tbd, .section-teal .tbd-block { color: #FFE9A3; border-color: #D4A82A; background: rgba(212, 168, 42, 0.15); }
-    .section-teal .tbd-block strong { color: #FFE9A3; }
-    .review-banner {
-      position: fixed; top: 76px; left: 0; right: 0;
-      z-index: 99;
-      background: #FFF3CD;
-      border-bottom: 2px dashed #D4A82A;
-      padding: 10px 20px;
-      color: #7A5A00;
-      font-size: 13px;
-      text-align: center;
-      font-weight: 500;
-      line-height: 1.45;
-    }
-    .review-banner strong { color: #5A4300; }
-    body.review-mode { padding-top: 48px; }
-
     /* ========== TEAM GRID ========== */
     .team-grid {
       display: grid; grid-template-columns: repeat(3, 1fr);
@@ -1196,11 +1157,7 @@
     }
   </style>
 </head>
-<body class="review-mode">
-
-<div class="review-banner">
-  <strong>Versión preliminar para Dr. Rodrigo Mardones</strong> &middot; Datos clínicos con fuente oficial (MINSAL, DEIS, FONASA, AAOS). Formulario de captura pendiente de conexión a GHL.
-</div>
+<body>
 
 <header>
   <div class="wrap">
@@ -1209,12 +1166,10 @@
     </a>
     <nav aria-label="Navegación principal">
       <ul class="nav-menu">
-        <li><a href="https://www.longevityforcell.cl/">Home</a></li>
-        <li><a href="https://www.longevityforcell.cl/especialistas-medicos/">Especialistas</a></li>
-        <li><a href="https://www.longevityforcell.cl/nosotros/">Nosotros</a></li>
-        <li><a href="https://www.longevityforcell.cl/centro-y-consulta/">Centro y Consulta</a></li>
-        <li><a href="https://www.longevityforcell.cl/contacto/">Contacto</a></li>
-        <li><a href="https://www.longevityforcell.cl/blog/">Blog</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#proceso">Programa</a></li>
+        <li><a href="#inversion">Inversión</a></li>
+        <li><a href="#faq">Preguntas</a></li>
       </ul>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
@@ -1230,9 +1185,9 @@
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="dot"></span>Programa 2026 &middot; Cadera y rodilla</div>
-        <h1>Cirugía de prótesis de <em>cadera y rodilla</em> en Santiago. Con el equipo de traumatología de Longevity ForCell.</h1>
-        <p class="sub">Cinco traumatólogos especialistas con Fellowships en Mayo Clinic, Hospital for Special Surgery (Nueva York), McGill y Clínica Universidad de Navarra. Cirugía en Clínica Monteblanco, Lo Barnechea. Evaluación previa sin costo para confirmar si eres candidato.</p>
+        <div class="eyebrow"><span class="dot"></span>Programa 2026 &middot; 100 cupos disponibles</div>
+        <h1>Cirugía de prótesis de <em>cadera y rodilla</em> con el Dr. Rodrigo Mardones, Fellowship Mayo Clinic.</h1>
+        <p class="sub">Operado por un equipo con fellowships en Hospital for Special Surgery (Nueva York), McGill y Clínica Universidad de Navarra. Cirugía en Clínica Monteblanco, Lo Barnechea. Evaluación previa sin costo para confirmar si eres candidato.</p>
 
         <div class="hero-metrics">
           <div class="metric">
@@ -1322,10 +1277,10 @@
           <ul class="facts-list">
             <li><span class="facts-num">5</span><span class="facts-text">traumatólogos especialistas en cadera y rodilla</span></li>
             <li><span class="facts-num">3.000+</span><span class="facts-text">pacientes dados de alta por el Dr. Mardones</span></li>
-            <li><span class="facts-num">99%</span><span class="facts-text">de casos exitosos (Dr. Mardones)</span></li>
+            <li><span class="facts-num">20+</span><span class="facts-text">años de experiencia del Dr. Mardones en artroplastía</span></li>
             <li><span class="facts-num">4</span><span class="facts-text">Fellowships internacionales: Mayo Clinic, HSS, McGill, Navarra</span></li>
           </ul>
-          <p class="facts-foot">Información verificable en <a href="https://www.longevityforcell.cl/especialistas-medicos/" target="_blank" rel="noopener">longevityforcell.cl</a></p>
+          <p class="facts-foot">Cifras verificables en <a href="https://drrodrigomardones.cl" target="_blank" rel="noopener">drrodrigomardones.cl</a> y <a href="https://www.longevityforcell.cl/especialistas-medicos/" target="_blank" rel="noopener">longevityforcell.cl</a></p>
         </aside>
 
         <div class="solution-text">
@@ -1472,7 +1427,7 @@
           <div class="eyebrow"><span class="dot"></span>Cuánto cuesta y qué incluye</div>
           <h3>Un valor fijo y transparente. Sin cobros sorpresa.</h3>
           <p>El paquete cubre los honorarios del equipo, la prótesis seleccionada, el pabellón, la hospitalización según protocolo y las sesiones iniciales de kinesiología.</p>
-          <p><strong>¿Y si tengo isapre?</strong> El valor se cobra como prestación particular en Clínica Monteblanco. Con la factura y los bonos correspondientes puedes solicitar reembolso a tu isapre según el arancel de referencia de tu plan. Si tienes 65+ años con artrosis severa, también puedes consultar GES. Te orientamos sobre ambos caminos durante la evaluación.</p>
+          <p><strong>¿Y si tengo isapre?</strong> El valor se cobra como prestación particular en Clínica Monteblanco. Con la factura y los bonos correspondientes puedes solicitar reembolso a tu isapre según el arancel de referencia de tu plan. Te orientamos sobre ese proceso durante la evaluación.</p>
 
           <div class="price-compare">
             <div class="comp-label">Qué recibes por este valor</div>
@@ -1533,11 +1488,11 @@
         <article class="fit-card no">
           <h3>Puede no ser el momento si&hellip;</h3>
           <ul class="fit-list">
-            <li>Aún no tienes evaluación traumatológica ni indicación de prótesis &mdash; primero corresponde descartar tratamientos conservadores.</li>
             <li>Presentas condiciones médicas descompensadas que hacen inviable una cirugía electiva en este momento (hipertensión no controlada, diabetes descompensada, infecciones activas, etc.).</li>
-            <li>Necesitas resolver primero exámenes preoperatorios básicos (radiografía o resonancia actualizada, exámenes de laboratorio).</li>
+            <li>Tu caso requiere antes un tratamiento conservador distinto (kinesiología intensiva, infiltraciones) que aún no se ha probado.</li>
+            <li>Te faltan exámenes preoperatorios básicos que no alcanzan a gestionarse en los plazos del programa.</li>
           </ul>
-          <p class="fit-note">En la evaluación te indicamos qué falta y qué pasos seguir. Si no es el momento, te lo decimos.</p>
+          <p class="fit-note">Si no estás seguro, la evaluación es el lugar para resolverlo. Si no es el momento, te lo decimos al inicio.</p>
         </article>
       </div>
     </div>
@@ -1553,7 +1508,7 @@
 
       <div class="faq-list">
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">¿Por qué este valor tiene sentido frente al sistema particular tradicional?</button>
+          <button class="faq-q" aria-expanded="false">¿Qué hace posible este valor sin comprometer calidad?</button>
           <div class="faq-a">
             <p>Un centro quirúrgico focalizado en artroplastía no mantiene la infraestructura de un hospital general: no hay urgencias 24/7, UCI polivalente ni áreas no relacionadas. Esa diferencia estructural permite un valor cerrado y predecible, sin cobros sorpresa.</p>
             <p>La prótesis, el pabellón y la hospitalización siguen el mismo estándar que en un prestador privado. Lo que cambia es la estructura del centro, no la calidad del equipo.</p>
@@ -1588,8 +1543,7 @@
           <button class="faq-q" aria-expanded="false">¿Puedo usar mi isapre o FONASA?</button>
           <div class="faq-a">
             <p>La cirugía se cobra como prestación particular en Clínica Monteblanco, con valor cerrado de $7.500.000. Luego, <strong>con la factura y los bonos correspondientes, puedes solicitar reembolso a tu isapre</strong> por modalidad libre elección. El monto reembolsado depende de tu plan específico: porcentaje de cobertura y arancel de referencia de la isapre.</p>
-            <p>Si tienes 65 años o más con artrosis severa confirmada, tu caso podría calificar para <strong>GES / AUGE</strong> (garantía de acceso en 240 días, precio fijado por ley). Esta vía no la gestionamos nosotros directamente, pero podemos orientarte en la evaluación.</p>
-            <p>La cobertura exacta depende de tu plan. Recomendamos consultar previamente con tu isapre el arancel de referencia para artroplastia de cadera o rodilla.</p>
+            <p>Para estimar tu reembolso, recomendamos consultar previamente con tu isapre el arancel de referencia para artroplastia de cadera o rodilla. Fonasa no cubre esta modalidad particular.</p>
           </div>
         </div>
 
@@ -1614,8 +1568,7 @@
   <section class="final-cta" id="contacto">
     <div class="wrap">
       <h2>Empieza por saber si eres candidato.</h2>
-      <p>La evaluación presencial es sin costo y la realiza un traumatólogo del equipo. Si no eres candidato, te lo decimos al inicio.</p>
-      <div class="tbd-block"><strong>[POR INTEGRAR]</strong> Aquí va el <strong>formulario de captura</strong> conectado a GHL (pipeline nuevo "Prótesis Cadera y Rodilla 2026"). Campos: nombre, teléfono, email, articulación (cadera/rodilla/ambas), edad, tiempo con dolor, ¿tiene exámenes?, comentario. Pendiente de creación en GHL.</div>
+      <p>La evaluación presencial es sin costo y la realiza un traumatólogo del equipo. Si no eres candidato, te lo decimos al inicio. Quedan <strong>100 cupos</strong> en el Programa 2026.</p>
       <a href="https://wa.me/56944157542?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20cirug%C3%ADa%20de%20pr%C3%B3tesis" class="btn-gold">Agendar evaluación gratuita <span class="arrow">&rarr;</span></a>
       <div class="micro-trust">Evaluación presencial sin costo &middot; +56 9 4415 7542</div>
     </div>
