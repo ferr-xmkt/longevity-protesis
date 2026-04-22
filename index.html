@@ -846,6 +846,29 @@
       display: block; font-size: 12px; color: var(--ink-500);
       margin-top: 8px; font-family: var(--font-sans);
     }
+    .price-compare-list {
+      list-style: none;
+      margin-top: 12px;
+      padding: 0;
+    }
+    .price-compare-list li {
+      padding: 8px 0 8px 26px;
+      position: relative;
+      font-size: 14px;
+      color: var(--ink-700);
+      line-height: 1.5;
+    }
+    .price-compare-list li + li {
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .price-compare-list li::before {
+      content: "";
+      position: absolute; left: 0; top: 14px;
+      width: 14px; height: 8px;
+      border-left: 2px solid var(--accent-gold-deep);
+      border-bottom: 2px solid var(--accent-gold-deep);
+      transform: rotate(-45deg);
+    }
 
     /* ========== TESTIMONIALS ========== */
     .testimonials-grid {
@@ -1270,8 +1293,8 @@
 
         <article class="problem-card">
           <div class="num">31.526</div>
-          <h3>Artroplastias de rodilla realizadas</h3>
-          <p>Total acumulado entre 2004 y 2021 en Chile. El 67% se realizó en pacientes FONASA y el 51% en instituciones públicas. La demanda privada sigue creciendo.</p>
+          <h3>Artroplastias realizadas en Chile</h3>
+          <p>Total acumulado de artroplastias de rodilla entre 2004 y 2021. La demanda supera sostenidamente la capacidad instalada del sistema público, empujando a miles de pacientes a buscar alternativas en el ámbito particular.</p>
           <p class="source-cite">Fuente: DEIS - MINSAL</p>
         </article>
       </div>
@@ -1443,9 +1466,13 @@
           <p><strong>100% particular.</strong> Esta campaña no bonifica con Isapre ni FONASA. El valor publicado ya es el valor final. Existe financiamiento directo para facilitar el pago.</p>
 
           <div class="price-compare">
-            <div class="comp-label">Referencia pública</div>
-            <div class="comp-range">$6.783.920</div>
-            <small>Arancel SAP FONASA 2025 — precio conocido con prótesis en prestadores adheridos. La diferencia se explica por el equipo especialista (Fellowships Mayo Clinic, HSS, McGill, Navarra) y la atención dedicada en Monteblanco.</small>
+            <div class="comp-label">Qué recibes por este valor</div>
+            <ul class="price-compare-list">
+              <li>Cirujano con Fellowship Mayo Clinic (EE.UU.) liderando el equipo</li>
+              <li>Equipo respaldado por Fellowships en HSS (Nueva York), McGill y Universidad de Navarra</li>
+              <li>Atención en un centro quirúrgico dedicado, sin derivar tu caso a pabellón compartido</li>
+              <li>Valor cerrado por escrito antes de pagar &mdash; sin presupuestos abiertos</li>
+            </ul>
           </div>
         </div>
 
