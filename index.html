@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cirugía de prótesis de cadera y rodilla en Santiago | Longevity ForCell</title>
+  <meta name="description" content="Cirugía de prótesis de cadera y rodilla con el Dr. Rodrigo Mardones (Fellowship Mayo Clinic) y el Dr. Tomás Ilić (Fellowship HSS Nueva York). Clínica Monteblanco, Lo Barnechea. Evaluación sin costo.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="Cirugía de prótesis de cadera y rodilla | Longevity ForCell">
+  <meta property="og:description" content="Dr. Rodrigo Mardones (cadera, Fellowship Mayo Clinic) y Dr. Tomás Ilić (rodilla, Fellowship HSS Nueva York). Clínica Monteblanco. Evaluación sin costo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/hero-clinic.jpg">
+
+  <style>
+    :root {
+      /* Brand */
+      --brand-teal: #006f73;
+      --brand-teal-soft: #82c0c7;
+      --brand-teal-ink: #004a4d;
+
+      /* Accent */
+      --accent-gold: #C9A96E;
+      --accent-gold-deep: #b8925a;
+
+      /* Neutrals */
+      --neutral-cream: #FAF7F2;
+      --neutral-offwhite: #F5F7F7;
+      --neutral-white: #FFFFFF;
+
+      /* Ink */
+      --ink-900: #1A1A1A;
+      --ink-700: #333333;
+      --ink-500: #666666;
+
+      /* Fonts — matching longevityforcell.cl parent brand */
+      --font-display: 'Outfit', Helvetica, Arial, sans-serif;
+      --font-sans: 'Open Sans', Arial, sans-serif;
+
+      /* Spacing scale (4px base) */
+      --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px;
+      --s-6: 24px; --s-8: 32px; --s-12: 48px; --s-16: 64px;
+      --s-24: 96px; --s-32: 128px;
+
+      /* Radius */
+      --radius-card: 8px;
+      --radius-pill: 999px;
+
+      /* Shadows */
+      --shadow-card: 0 4px 24px rgba(0,111,115,0.08);
+      --shadow-hover: 0 12px 40px rgba(0,111,115,0.14);
+
+      /* Layout */
+      --max-w: 1120px;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--ink-700);
+      background: var(--neutral-white);
+      line-height: 1.65;
+      font-size: 17px;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+    a { color: var(--brand-teal); text-decoration: none; }
+    a:hover { color: var(--brand-teal-ink); }
+
+    /* ========== NAV ========== */
+    header {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: var(--brand-teal-ink);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    header .wrap {
+      display: flex; justify-content: space-between; align-items: center;
+      height: 72px;
+    }
+    .logo {
+      font-family: var(--font-display);
+      font-size: 22px; font-weight: 500;
+      color: var(--neutral-white);
+      letter-spacing: 0.3px;
+    }
+    .logo span { color: var(--accent-gold); font-weight: 600; }
+    .btn-nav {
+      background: var(--accent-gold); color: var(--brand-teal-ink); border: none;
+      padding: 12px 24px; border-radius: var(--radius-pill);
+      font-family: var(--font-sans);
+      font-size: 14px; font-weight: 600; cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: background .2s, transform .15s;
+      min-height: 44px;
+      display: inline-flex; align-items: center;
+    }
+    .btn-nav:hover { background: var(--accent-gold-deep); transform: translateY(-1px); color: var(--brand-teal-ink); }
+
+    /* ========== BUTTONS ========== */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--brand-teal); color: var(--neutral-white);
+      padding: 18px 36px; border-radius: var(--radius-pill);
+      font-family: var(--font-sans); font-size: 16px; font-weight: 600;
+      border: none; cursor: pointer;
+      letter-spacing: 0.2px;
+      box-shadow: 0 6px 24px rgba(0,111,115,0.25);
+      transition: transform .15s, box-shadow .2s, background .2s;
+      min-height: 56px;
+    }
+    .btn-primary:hover {
+      background: var(--brand-teal-ink);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px rgba(0,111,115,0.35);
+      color: var(--neutral-white);
+    }
+    .btn-primary .arrow { transition: transform .2s; }
+    .btn-primary:hover .arrow { transform: translateX(4px); }
+
+    .btn-gold {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--accent-gold); color: var(--brand-teal-ink);
+      padding: 18px 36px; border-radius: var(--radius-pill);
+      font-family: var(--font-sans); font-size: 16px; font-weight: 600;
+      border: none; cursor: pointer;
+      letter-spacing: 0.2px;
+      box-shadow: 0 6px 24px rgba(201,169,110,0.35);
+      transition: transform .15s, box-shadow .2s, background .2s;
+      min-height: 56px;
+    }
+    .btn-gold:hover {
+      background: var(--accent-gold-deep);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px rgba(201,169,110,0.5);
+      color: var(--brand-teal-ink);
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      padding: 144px 0 96px;
+      background: var(--neutral-cream);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: ""; position: absolute; top: -120px; right: -120px;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(130,192,199,0.18) 0%, rgba(130,192,199,0) 70%);
+      pointer-events: none;
+    }
+    .hero .wrap {
+      display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center;
+      position: relative;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,111,115,0.08);
+      color: var(--brand-teal-ink);
+      font-size: 13px; font-weight: 600;
+      padding: 8px 16px; border-radius: var(--radius-pill);
+      letter-spacing: 0.5px; text-transform: uppercase;
+      margin-bottom: 24px;
+      font-family: var(--font-sans);
+    }
+    .eyebrow .dot {
+      width: 6px; height: 6px; background: var(--accent-gold);
+      border-radius: 50%;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(40px, 5.2vw, 64px);
+      line-height: 1.08;
+      color: var(--ink-900);
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 em {
+      font-style: italic; color: var(--brand-teal);
+      font-weight: 500;
+    }
+    .hero .sub {
+      font-size: 19px; line-height: 1.55;
+      color: var(--ink-700);
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+    .hero-metrics {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 24px 0;
+      margin-bottom: 32px;
+      border-top: 1px solid rgba(0,111,115,0.15);
+      border-bottom: 1px solid rgba(0,111,115,0.15);
+    }
+    .metric .num {
+      font-family: var(--font-display);
+      font-size: 32px; font-weight: 600;
+      color: var(--brand-teal-ink);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .metric .label {
+      font-size: 13px; color: var(--ink-500);
+      line-height: 1.4;
+    }
+    .hero-cta-row {
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .micro-trust {
+      font-size: 14px; color: var(--ink-500);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .micro-trust::before {
+      content: ""; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent-gold);
+    }
+    .hero-visual {
+      position: relative;
+    }
+    .hero-visual .image-frame {
+      position: relative;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      box-shadow: var(--shadow-hover);
+      aspect-ratio: 4/5;
+      background: linear-gradient(135deg, var(--brand-teal) 0%, var(--brand-teal-ink) 100%);
+    }
+    .hero-visual .image-frame::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(0,74,77,0) 40%, rgba(0,74,77,0.5) 100%);
+    }
+    .hero-visual img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .hero-visual .credential-card {
+      position: absolute; bottom: 24px; left: 24px; right: 24px;
+      background: var(--neutral-white);
+      padding: 20px;
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      display: flex; align-items: center; gap: 14px;
+      z-index: 2;
+    }
+    .credential-card .avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--brand-teal-soft);
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 600; color: var(--brand-teal-ink);
+    }
+    .credential-card .info .name {
+      font-weight: 600; color: var(--ink-900); font-size: 15px;
+      margin-bottom: 2px;
+    }
+    .credential-card .info .role {
+      font-size: 13px; color: var(--ink-500); line-height: 1.4;
+    }
+
+    /* ========== SECTION BASE ========== */
+    section { padding: 96px 0; }
+    .section-cream { background: var(--neutral-cream); }
+    .section-offwhite { background: var(--neutral-offwhite); }
+    .section-teal {
+      background: var(--brand-teal-ink);
+      color: var(--neutral-white);
+    }
+
+    .section-head {
+      max-width: 720px; margin: 0 auto var(--s-12);
+      text-align: center;
+    }
+    .section-head.left {
+      text-align: left; margin-left: 0;
+    }
+    .section-label {
+      font-family: var(--font-sans);
+      font-size: 13px; font-weight: 600;
+      color: var(--accent-gold-deep);
+      letter-spacing: 2px; text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .section-teal .section-label { color: var(--accent-gold); }
+    .section-head h2 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(32px, 3.6vw, 44px);
+      line-height: 1.15;
+      color: var(--ink-900);
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+    }
+    .section-teal .section-head h2 { color: var(--neutral-white); }
+    .section-head p {
+      font-size: 18px; color: var(--ink-500);
+      line-height: 1.6;
+    }
+    .section-teal .section-head p { color: rgba(255,255,255,0.75); }
+
+    /* ========== PROBLEM (TEAL) ========== */
+    .problem-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+      margin-top: 48px;
+    }
+    .problem-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-card);
+      padding: 32px;
+      transition: background .2s, transform .2s;
+    }
+    .problem-card:hover {
+      background: rgba(255,255,255,0.07);
+      transform: translateY(-4px);
+    }
+    .problem-card .num {
+      font-family: var(--font-display);
+      font-size: 44px; font-weight: 500;
+      color: var(--accent-gold);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .problem-card h3 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 22px;
+      color: var(--neutral-white);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .problem-card p {
+      font-size: 16px; color: rgba(255,255,255,0.8);
+      line-height: 1.6;
+    }
+    .problem-note {
+      margin-top: 48px; text-align: center;
+      font-size: 14px; color: rgba(255,255,255,0.55);
+      font-style: italic;
+    }
+
+    /* ========== SOLUTION ========== */
+    .solution-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+    }
+    .solution-image {
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--brand-teal-soft) 0%, var(--brand-teal) 100%);
+      box-shadow: var(--shadow-card);
+    }
+    .solution-image img { width: 100%; height: 100%; object-fit: cover; }
+    .solution-text h2 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(30px, 3.4vw, 40px);
+      line-height: 1.15;
+      color: var(--ink-900);
+      margin-bottom: 20px;
+    }
+    .solution-text p {
+      font-size: 17px; color: var(--ink-700);
+      margin-bottom: 16px; line-height: 1.65;
+    }
+    .solution-bullets {
+      list-style: none; margin-top: 24px;
+    }
+    .solution-bullets li {
+      padding: 12px 0 12px 32px;
+      position: relative;
+      font-size: 16px; color: var(--ink-700);
+      border-bottom: 1px solid rgba(0,111,115,0.1);
+    }
+    .solution-bullets li:last-child { border-bottom: none; }
+    .solution-bullets li::before {
+      content: "";
+      position: absolute; left: 0; top: 18px;
+      width: 18px; height: 10px;
+      border-left: 2px solid var(--brand-teal);
+      border-bottom: 2px solid var(--brand-teal);
+      transform: rotate(-45deg);
+    }
+    .solution-bullets strong { color: var(--ink-900); font-weight: 600; }
+
+    /* ========== DOCTOR SPOTLIGHT ========== */
+    .doctor-spotlight {
+      background: var(--neutral-cream);
+      position: relative;
+      padding-bottom: 32px;
+    }
+    .doctor-spotlight + .doctor-spotlight {
+      padding-top: 32px;
+    }
+    .doctor-spotlight--alt {
+      background: var(--neutral-offwhite);
+    }
+    .doctor-grid {
+      display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px;
+      align-items: center;
+    }
+    .doctor-grid--reverse {
+      grid-template-columns: 1.2fr 1fr;
+    }
+    .doctor-portrait {
+      position: relative;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      box-shadow: var(--shadow-hover);
+      background: linear-gradient(180deg, var(--brand-teal-soft) 0%, var(--brand-teal-ink) 100%);
+    }
+    .doctor-portrait img { width: 100%; height: 100%; object-fit: cover; }
+    .doctor-portrait .badge {
+      position: absolute; top: 24px; left: 24px;
+      background: var(--neutral-white);
+      padding: 10px 16px; border-radius: var(--radius-pill);
+      font-size: 12px; font-weight: 600;
+      color: var(--brand-teal-ink);
+      letter-spacing: 1px; text-transform: uppercase;
+      box-shadow: var(--shadow-card);
+    }
+    .doctor-info .eyebrow {
+      background: rgba(201,169,110,0.15);
+      color: var(--accent-gold-deep);
+    }
+    .doctor-info h2,
+    .doctor-info .doctor-name {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(30px, 3.5vw, 42px);
+      line-height: 1.1;
+      color: var(--ink-900);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .doctor-info .title {
+      font-size: 17px; color: var(--brand-teal);
+      font-weight: 500;
+      margin-bottom: 32px;
+      font-style: italic;
+      font-family: var(--font-display);
+    }
+    .doctor-info p {
+      font-size: 17px; color: var(--ink-700);
+      margin-bottom: 20px; line-height: 1.7;
+    }
+    .credentials-list {
+      list-style: none;
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 20px 32px;
+      padding: 32px 0;
+      border-top: 1px solid rgba(0,111,115,0.15);
+      border-bottom: 1px solid rgba(0,111,115,0.15);
+      margin: 24px 0 32px;
+    }
+    .credentials-list li {
+      font-size: 15px; color: var(--ink-700);
+      padding-left: 20px; position: relative;
+      line-height: 1.5;
+    }
+    .credentials-list li::before {
+      content: ""; position: absolute; left: 0; top: 8px;
+      width: 10px; height: 2px; background: var(--accent-gold);
+    }
+    .credentials-list strong { color: var(--ink-900); font-weight: 600; }
+
+    /* ========== PROCESS ========== */
+    .process-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 32px; margin-top: 56px;
+    }
+    .process-step {
+      position: relative;
+      padding: 32px;
+      background: var(--neutral-white);
+      border: 1px solid rgba(0,111,115,0.12);
+      border-radius: var(--radius-card);
+      transition: box-shadow .2s, transform .2s, border-color .2s;
+    }
+    .process-step:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--brand-teal);
+      transform: translateY(-4px);
+    }
+    .process-step .step-num {
+      font-family: var(--font-display);
+      font-size: 15px; font-weight: 600;
+      color: var(--accent-gold-deep);
+      letter-spacing: 2px; text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .process-step h3 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 26px; color: var(--ink-900);
+      margin-bottom: 12px; line-height: 1.2;
+    }
+    .process-step p {
+      font-size: 16px; color: var(--ink-500);
+      line-height: 1.6;
+    }
+    .process-step .duration {
+      margin-top: 20px;
+      display: inline-block;
+      font-size: 13px; font-weight: 600;
+      color: var(--brand-teal);
+      background: rgba(0,111,115,0.08);
+      padding: 6px 14px; border-radius: var(--radius-pill);
+    }
+
+    /* ========== PRICING ========== */
+    .pricing-wrap {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
+    }
+    .price-card {
+      background: var(--neutral-white);
+      border: 2px solid var(--accent-gold);
+      border-radius: var(--radius-card);
+      padding: 40px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+    .price-card .tag {
+      position: absolute; top: -14px; left: 32px;
+      background: var(--accent-gold); color: var(--brand-teal-ink);
+      font-size: 12px; font-weight: 700;
+      padding: 6px 16px; border-radius: var(--radius-pill);
+      letter-spacing: 1.5px; text-transform: uppercase;
+    }
+    .price-card .label {
+      font-size: 14px; color: var(--ink-500);
+      text-transform: uppercase; letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+    .price-card .amount {
+      font-family: var(--font-display);
+      font-size: 56px; font-weight: 600;
+      color: var(--ink-900);
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .price-card .amount .currency {
+      font-size: 24px;
+      color: var(--ink-500);
+      font-weight: 500;
+      vertical-align: top;
+      margin-right: 4px;
+    }
+    .price-card .sub {
+      font-size: 15px; color: var(--ink-500);
+      margin-bottom: 32px;
+    }
+    .price-card .sub strong { color: var(--brand-teal); font-weight: 600; }
+    .price-card .divider {
+      height: 1px; background: rgba(0,111,115,0.15);
+      margin: 24px 0;
+    }
+    .includes-title {
+      font-size: 13px; font-weight: 600;
+      color: var(--ink-900);
+      text-transform: uppercase; letter-spacing: 1.5px;
+      margin-bottom: 16px;
+    }
+    .includes-list {
+      list-style: none; margin-bottom: 32px;
+    }
+    .includes-list li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+      font-size: 15px; color: var(--ink-700);
+    }
+    .includes-list li::before {
+      content: "+";
+      position: absolute; left: 0; top: 8px;
+      width: 18px; height: 18px;
+      background: var(--brand-teal); color: var(--neutral-white);
+      border-radius: 50%;
+      font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      line-height: 1;
+    }
+    .price-context h3 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 32px; color: var(--ink-900);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .price-context p {
+      font-size: 17px; color: var(--ink-700);
+      margin-bottom: 16px; line-height: 1.65;
+    }
+    .price-compare {
+      background: var(--neutral-offwhite);
+      padding: 24px; border-radius: var(--radius-card);
+      margin-top: 24px;
+      border-left: 3px solid var(--accent-gold);
+    }
+    .price-compare .comp-label {
+      font-size: 13px; color: var(--ink-500);
+      letter-spacing: 0.5px; text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .price-compare .comp-range {
+      font-family: var(--font-display);
+      font-size: 22px; color: var(--ink-900);
+      font-weight: 500;
+    }
+    .price-compare small {
+      display: block; font-size: 12px; color: var(--ink-500);
+      margin-top: 8px; font-family: var(--font-sans);
+    }
+
+    /* ========== TESTIMONIALS ========== */
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px; margin-top: 56px;
+    }
+    .testimonial {
+      background: var(--neutral-white);
+      border: 1px solid rgba(0,111,115,0.12);
+      border-radius: var(--radius-card);
+      padding: 32px;
+      position: relative;
+      display: flex; flex-direction: column;
+    }
+    .testimonial .quote-mark {
+      font-family: var(--font-display);
+      font-size: 56px; color: var(--brand-teal-soft);
+      line-height: 0.5;
+      margin-bottom: 16px;
+      opacity: 0.5;
+    }
+    .testimonial .body {
+      font-size: 16px; color: var(--ink-700);
+      line-height: 1.65;
+      margin-bottom: 24px;
+      font-style: italic;
+      flex: 1;
+    }
+    .testimonial .person {
+      display: flex; align-items: center; gap: 12px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0,111,115,0.1);
+    }
+    .testimonial .person .pic {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--neutral-offwhite);
+      flex-shrink: 0;
+    }
+    .testimonial .person .name {
+      font-weight: 600; color: var(--ink-900); font-size: 14px;
+    }
+    .testimonial .person .detail {
+      font-size: 13px; color: var(--ink-500);
+    }
+    .testimonial.placeholder {
+      background: var(--neutral-offwhite);
+      border-style: dashed;
+      opacity: 0.8;
+    }
+    .placeholder-tag {
+      display: inline-block;
+      background: rgba(201,169,110,0.15);
+      color: var(--accent-gold-deep);
+      font-size: 11px; font-weight: 700;
+      padding: 4px 10px; border-radius: var(--radius-pill);
+      letter-spacing: 1px; text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .testimonials-note {
+      margin-top: 32px; text-align: center;
+      font-size: 14px; color: var(--ink-500);
+      font-style: italic;
+    }
+
+    /* ========== FIT / NOT FIT ========== */
+    .fit-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 32px; margin-top: 48px;
+    }
+    .fit-card {
+      background: var(--neutral-white);
+      border-radius: var(--radius-card);
+      padding: 40px;
+      box-shadow: var(--shadow-card);
+    }
+    .fit-card.yes { border-top: 4px solid var(--brand-teal); }
+    .fit-card.no { border-top: 4px solid var(--ink-500); }
+    .fit-card h3 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 26px; color: var(--ink-900);
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+    .fit-list {
+      list-style: none;
+    }
+    .fit-list li {
+      padding: 12px 0 12px 32px;
+      position: relative;
+      font-size: 16px; color: var(--ink-700);
+      border-bottom: 1px solid rgba(0,111,115,0.08);
+      line-height: 1.5;
+    }
+    .fit-list li:last-child { border-bottom: none; }
+    .fit-card.yes .fit-list li::before {
+      content: "";
+      position: absolute; left: 0; top: 18px;
+      width: 16px; height: 9px;
+      border-left: 2px solid var(--brand-teal);
+      border-bottom: 2px solid var(--brand-teal);
+      transform: rotate(-45deg);
+    }
+    .fit-card.no .fit-list li::before {
+      content: "";
+      position: absolute; left: 4px; top: 19px;
+      width: 12px; height: 2px;
+      background: var(--ink-500);
+    }
+
+    /* ========== FAQ ========== */
+    .faq-list {
+      max-width: 820px; margin: 56px auto 0;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(0,111,115,0.15);
+    }
+    .faq-item:first-child { border-top: 1px solid rgba(0,111,115,0.15); }
+    .faq-q {
+      width: 100%;
+      background: none; border: none;
+      padding: 24px 48px 24px 0;
+      text-align: left; cursor: pointer;
+      font-family: var(--font-display);
+      font-size: 20px; font-weight: 500;
+      color: var(--ink-900);
+      line-height: 1.3;
+      position: relative;
+      transition: color .2s;
+    }
+    .faq-q:hover { color: var(--brand-teal); }
+    .faq-q::after {
+      content: "+";
+      position: absolute; right: 4px; top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px; color: var(--brand-teal);
+      font-weight: 300;
+      transition: transform .25s;
+      font-family: var(--font-sans);
+    }
+    .faq-item.open .faq-q::after {
+      transform: translateY(-50%) rotate(45deg);
+    }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height .3s ease, padding .25s;
+      font-size: 16px; color: var(--ink-700);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-a {
+      max-height: 600px;
+      padding: 0 0 28px;
+    }
+    .faq-a p { margin-bottom: 12px; }
+    .faq-a p:last-child { margin-bottom: 0; }
+
+    /* ========== FINAL CTA ========== */
+    .final-cta {
+      background: var(--brand-teal-ink);
+      color: var(--neutral-white);
+      padding: 120px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: ""; position: absolute;
+      top: -200px; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(130,192,199,0.12) 0%, rgba(130,192,199,0) 70%);
+      pointer-events: none;
+    }
+    .final-cta .wrap { position: relative; }
+    .final-cta h2 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(34px, 4.4vw, 52px);
+      line-height: 1.1;
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+    }
+    .final-cta p {
+      font-size: 19px;
+      color: rgba(255,255,255,0.75);
+      max-width: 640px; margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    .final-cta .btn-gold { font-size: 17px; }
+    .final-cta .micro-trust {
+      justify-content: center;
+      color: rgba(255,255,255,0.6);
+      margin-top: 24px;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: var(--ink-900);
+      color: rgba(255,255,255,0.75);
+      padding: 80px 0 40px;
+      font-size: 14px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px; margin-bottom: 64px;
+    }
+    footer .logo {
+      margin-bottom: 16px; display: block;
+    }
+    footer .about {
+      font-size: 14px; line-height: 1.65;
+      color: rgba(255,255,255,0.6);
+      max-width: 360px;
+    }
+    footer h4 {
+      font-family: var(--font-sans);
+      font-size: 13px; font-weight: 600;
+      color: var(--neutral-white);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+    footer ul { list-style: none; }
+    footer li { margin-bottom: 10px; line-height: 1.5; }
+    footer a {
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      transition: color .2s;
+    }
+    footer a:hover { color: var(--accent-gold); }
+    .legal-bar {
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex; justify-content: space-between;
+      gap: 24px; flex-wrap: wrap;
+      font-size: 12px; color: rgba(255,255,255,0.5);
+      line-height: 1.6;
+    }
+    .legal-disclaimer {
+      max-width: 720px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      line-height: 1.6;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 960px) {
+      .hero { padding: 120px 0 64px; }
+      .hero .wrap { grid-template-columns: 1fr; gap: 48px; }
+      .hero-visual { order: 2; max-width: 480px; margin: 0 auto; width: 100%; }
+      .solution-grid, .doctor-grid, .doctor-grid--reverse, .pricing-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .doctor-portrait { max-width: 420px; margin: 0 auto; }
+      .doctor-grid--reverse .doctor-info { order: 2; }
+      .doctor-grid--reverse .doctor-portrait { order: 1; }
+      .problem-grid, .process-grid, .testimonials-grid { grid-template-columns: 1fr; }
+      .fit-grid { grid-template-columns: 1fr; }
+      .credentials-list { grid-template-columns: 1fr; gap: 12px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      section { padding: 72px 0; }
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { padding: 0 20px; }
+      header .wrap { height: 64px; }
+      .logo { font-size: 18px; }
+      .btn-nav { padding: 10px 18px; font-size: 13px; }
+      .hero h1 { font-size: 36px; }
+      .hero .sub { font-size: 16px; }
+      .hero-metrics { grid-template-columns: 1fr; gap: 16px; padding: 16px 0; }
+      .metric .num { font-size: 26px; }
+      .section-head h2 { font-size: 28px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .btn-primary, .btn-gold { width: 100%; justify-content: center; }
+      .hero-cta-row { flex-direction: column; align-items: stretch; }
+      .price-card { padding: 28px 24px; }
+      .price-card .amount { font-size: 42px; }
+      .doctor-info h2, .price-context h3 { font-size: 28px; }
+      .faq-q { font-size: 17px; padding-right: 36px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo">Longevity <span>ForCell</span></a>
+    <a href="#contacto" class="btn-nav">Agendar evaluación</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span>Programa 2026 &middot; Cadera y rodilla</div>
+        <h1>Cirugía de prótesis de <em>cadera y rodilla</em> en Santiago. Con el Dr. Rodrigo Mardones y el Dr. Tomás Ilić.</h1>
+        <p class="sub">Dr. Mardones (cadera) con Fellowship en Mayo Clinic y más de 20 años de experiencia. Dr. Ilić (rodilla) con Fellowship en Hospital for Special Surgery (HSS), Nueva York. Operación en Clínica Monteblanco, Lo Barnechea. Evaluación previa sin costo para confirmar si eres candidato.</p>
+
+        <div class="hero-metrics">
+          <div class="metric">
+            <div class="num">20+</div>
+            <div class="label">años en artroplastía de cadera</div>
+          </div>
+          <div class="metric">
+            <div class="num">5.000+</div>
+            <div class="label">horas quirúrgicas acumuladas</div>
+          </div>
+          <div class="metric">
+            <div class="num">$7,5M</div>
+            <div class="label">cirugía con 10 cuotas a precio contado</div>
+          </div>
+        </div>
+
+        <div class="hero-cta-row">
+          <a href="#contacto" class="btn-primary">Agendar evaluación gratuita <span class="arrow">&rarr;</span></a>
+          <span class="micro-trust">Respuesta en 24 horas hábiles</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="image-frame">
+          <img src="img/hero-clinic.jpg" alt="Equipo de traumatología operando en pabellón de Clínica Monteblanco">
+          <div class="credential-card">
+            <div class="avatar">RM</div>
+            <div class="info">
+              <div class="name">Dr. Rodrigo Mardones</div>
+              <div class="role">Fellowship Mayo Clinic &middot; Clínica Monteblanco</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM (TEAL DARK) ===== -->
+  <section class="section-teal" id="problema">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-label">La espera</div>
+        <h2>Cuánto se espera por una prótesis en Chile</h2>
+        <p>Los pacientes con indicación quirúrgica suelen quedar meses o años en lista. Los números explican por qué tantos buscan una vía particular.</p>
+      </div>
+
+      <div class="problem-grid">
+        <article class="problem-card">
+          <div class="num">1,5&ndash;3 años</div>
+          <h3>Espera promedio en el sistema público</h3>
+          <p>Plazo frecuente para una cirugía programada de cadera o rodilla. Mientras tanto, el paciente sigue con tratamiento conservador y analgesia.</p>
+        </article>
+
+        <article class="problem-card">
+          <div class="num">$10M&ndash;$18M</div>
+          <h3>Rango en grandes clínicas privadas</h3>
+          <p>Valor habitual para artroplastía de cadera o rodilla en prestadores privados de Santiago, según bonificación del plan de salud.</p>
+        </article>
+
+        <article class="problem-card">
+          <div class="num">Decenas de miles</div>
+          <h3>Pacientes en lista nacional</h3>
+          <p>Registro FONASA de artroplastía acumula miles de casos año tras año. La demanda supera la capacidad instalada del sistema.</p>
+        </article>
+      </div>
+
+      <p class="problem-note">Fuentes: estimaciones en base a datos públicos FONASA y observación de prestadores privados de la Región Metropolitana, 2024&ndash;2025.</p>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION ===== -->
+  <section class="section-cream" id="solucion">
+    <div class="wrap">
+      <div class="solution-grid">
+        <div class="solution-image">
+          <img src="img/pabellon.jpg" alt="Pabellón quirúrgico equipado de Clínica Monteblanco en Lo Barnechea">
+        </div>
+
+        <div class="solution-text">
+          <div class="eyebrow"><span class="dot"></span>Cómo lo hacemos</div>
+          <h2>Un centro dedicado, un equipo con trayectoria verificable.</h2>
+          <p>Longevity ForCell opera en convenio con Clínica Monteblanco, Lo Barnechea. Un centro quirúrgico focalizado no sostiene la infraestructura de un hospital grande. Esa eficiencia se traslada al valor de la cirugía.</p>
+          <p>La evaluación la realiza el traumatólogo especialista. Si eres candidato, recibes un plan claro con fechas, exámenes previos y detalle del postoperatorio.</p>
+
+          <ul class="solution-bullets">
+            <li><strong>Equipo completo:</strong> 5 traumatólogos especialistas en cadera y rodilla, radiólogo dedicado y evaluación nutricional.</li>
+            <li><strong>Prótesis seleccionada por caso:</strong> el material se escoge según edad, actividad y anatomía. No hay catálogo único.</li>
+            <li><strong>Recuperación progresiva:</strong> marcha asistida al día siguiente en la mayoría de los casos. Rehabilitación kinésica incluida en el paquete.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTOR SPOTLIGHT — CADERA ===== -->
+  <section class="doctor-spotlight" id="cirujano-cadera">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-label">Quiénes operan</div>
+        <h2>Dos especialistas. Una por articulación.</h2>
+        <p>La cirugía de cadera y la de rodilla son procedimientos distintos. Cada una la realiza el cirujano con mayor experiencia en esa articulación.</p>
+      </div>
+
+      <div class="doctor-grid">
+        <div class="doctor-portrait">
+          <img src="img/dr-mardones.jpg" alt="Retrato del Dr. Rodrigo Mardones, cirujano ortopédico de cadera">
+          <div class="badge">Cirujano de cadera</div>
+        </div>
+
+        <div class="doctor-info">
+          <div class="eyebrow"><span class="dot"></span>Cadera</div>
+          <h3 class="doctor-name">Dr. Rodrigo Mardones</h3>
+          <p class="title">Cirujano ortopédico &middot; especialista en cadera</p>
+          <p>Volvió a Chile después de su Fellowship en cirugía articular reconstructiva en Mayo Clinic, Rochester. Desde entonces ha concentrado su práctica en dos cosas: operar cadera con técnicas de preservación articular y acompañar a pacientes que necesitan prótesis cuando ya no hay opción conservadora.</p>
+          <p>Trabaja con criterio claro: la cirugía de prótesis se indica cuando el dolor es persistente, limita la movilidad y los tratamientos conservadores ya no entregan alivio suficiente.</p>
+
+          <ul class="credentials-list">
+            <li><strong>Universidad de Chile</strong>, médico cirujano</li>
+            <li><strong>Universidad Católica</strong>, especialización en ortopedia</li>
+            <li><strong>Fellowship Mayo Clinic</strong>, Rochester, Minnesota</li>
+            <li><strong>Más de 20 años</strong> en artroplastía de cadera</li>
+            <li><strong>Pionero</strong> en técnicas de cirugía conservadora de cadera en Chile</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTOR SPOTLIGHT — RODILLA ===== -->
+  <section class="doctor-spotlight doctor-spotlight--alt" id="cirujano-rodilla">
+    <div class="wrap">
+      <div class="doctor-grid doctor-grid--reverse">
+        <div class="doctor-info">
+          <div class="eyebrow"><span class="dot"></span>Rodilla</div>
+          <h3 class="doctor-name">Dr. Tomás Ilić</h3>
+          <p class="title">Cirujano ortopédico &middot; especialista en rodilla</p>
+          <p>Formación quirúrgica completa en dos centros de referencia internacional: el Hospital for Special Surgery (HSS) en Nueva York, reconocido como uno de los principales centros de cirugía articular del mundo, y la Universidad de Navarra en España.</p>
+          <p>En Clínica Monteblanco realiza artroplastía de rodilla, tratamiento quirúrgico de artrosis y reconstrucción articular del adulto con un enfoque centrado en recuperar función y movilidad.</p>
+
+          <ul class="credentials-list">
+            <li><strong>Universidad de los Andes</strong>, médico cirujano</li>
+            <li><strong>Universidad de Valparaíso</strong>, especialización en ortopedia</li>
+            <li><strong>Universidad de Navarra</strong>, España &mdash; postgrado cadera y rodilla</li>
+            <li><strong>Fellowship Hospital for Special Surgery (HSS)</strong>, Nueva York</li>
+            <li><strong>Más de 15 años</strong> de experiencia en ortopedia</li>
+            <li><strong>Docente</strong> Universidad Andrés Bello</li>
+          </ul>
+
+          <a href="#contacto" class="btn-primary">Revisar mi caso con el equipo <span class="arrow">&rarr;</span></a>
+        </div>
+
+        <div class="doctor-portrait">
+          <img src="img/dr-ilic.jpg" alt="Retrato del Dr. Tomás Ilić, cirujano ortopédico de rodilla">
+          <div class="badge">Cirujano de rodilla</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="proceso">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-label">Desde la consulta al pabellón</div>
+        <h2>Tres pasos. Sin cobros intermedios.</h2>
+        <p>El recorrido desde que nos escribes hasta que entras a pabellón está definido. Esto es lo que pasa en cada etapa.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-step">
+          <div class="step-num">Paso 01</div>
+          <h3>Evaluación</h3>
+          <p>Un traumatólogo revisa tus exámenes previos y te confirma si eres candidato a cirugía. Si lo eres, se coordinan los estudios que falten.</p>
+          <span class="duration">Sin costo &middot; 45 min</span>
+        </article>
+
+        <article class="process-step">
+          <div class="step-num">Paso 02</div>
+          <h3>Planificación</h3>
+          <p>El equipo define la prótesis indicada para tu caso, la fecha de cirugía y el plan de rehabilitación. Recibes el detalle por escrito antes de pagar.</p>
+          <span class="duration">2 a 4 semanas</span>
+        </article>
+
+        <article class="process-step">
+          <div class="step-num">Paso 03</div>
+          <h3>Cirugía y recuperación</h3>
+          <p>Operación en Clínica Monteblanco con anestesia según protocolo. Hospitalización 1 a 3 días. Kinesiología dentro del paquete.</p>
+          <span class="duration">Recuperación 3 a 6 meses</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section-cream" id="inversion">
+    <div class="wrap">
+      <div class="pricing-wrap">
+        <div class="price-context">
+          <div class="eyebrow"><span class="dot"></span>Cuánto cuesta y qué incluye</div>
+          <h3>Un valor fijo y transparente. Sin cobros sorpresa.</h3>
+          <p>El paquete cubre los honorarios del equipo, la prótesis seleccionada, el pabellón, la hospitalización según protocolo y las sesiones iniciales de kinesiología.</p>
+          <p>Para pacientes con Isapre, el costo neto baja según el plan. Revisamos tu bonificación durante la evaluación, sin costo.</p>
+
+          <div class="price-compare">
+            <div class="comp-label">Rango observado en otros prestadores</div>
+            <div class="comp-range">$10.000.000 &ndash; $18.000.000</div>
+            <small>Prestadores privados, Región Metropolitana, 2024&ndash;2025. Valor final depende de plan de salud y tipo de prótesis.</small>
+          </div>
+        </div>
+
+        <div class="price-card">
+          <div class="tag">Programa 2026</div>
+          <div class="label">Cirugía de prótesis</div>
+          <div class="amount"><span class="currency">$</span>7.500.000</div>
+          <div class="sub"><strong>10 cuotas a precio contado</strong> sin interés, con tarjeta de crédito.</div>
+
+          <div class="divider"></div>
+
+          <div class="includes-title">Incluye</div>
+          <ul class="includes-list">
+            <li>Honorarios del cirujano y equipo quirúrgico</li>
+            <li>Prótesis seleccionada para tu caso</li>
+            <li>Pabellón en Clínica Monteblanco</li>
+            <li>Hospitalización según protocolo</li>
+            <li>Sesiones iniciales de kinesiología</li>
+            <li>Controles médicos postoperatorios</li>
+          </ul>
+
+          <a href="#contacto" class="btn-gold">Ver si soy candidato <span class="arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="pacientes">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-label">Pacientes operados</div>
+        <h2>Casos reales del equipo</h2>
+        <p>Estamos recopilando testimonios de pacientes recientes con su autorización escrita. Esta sección se actualiza durante 2026 con casos verificables.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial placeholder">
+          <span class="placeholder-tag">Próximamente</span>
+          <div class="quote-mark">&ldquo;</div>
+          <p class="body">Testimonio estructurado: situación antes de la cirugía, decisión, procedimiento y recuperación a los 3 meses. En proceso de autorización.</p>
+          <div class="person">
+            <div class="pic"></div>
+            <div>
+              <div class="name">Paciente operado 2025</div>
+              <div class="detail">Prótesis de cadera &middot; Santiago</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial placeholder">
+          <span class="placeholder-tag">Próximamente</span>
+          <div class="quote-mark">&ldquo;</div>
+          <p class="body">Testimonio estructurado: situación antes de la cirugía, decisión, procedimiento y recuperación a los 6 meses. En proceso de autorización.</p>
+          <div class="person">
+            <div class="pic"></div>
+            <div>
+              <div class="name">Paciente operado 2025</div>
+              <div class="detail">Prótesis de rodilla &middot; Santiago</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial placeholder">
+          <span class="placeholder-tag">Próximamente</span>
+          <div class="quote-mark">&ldquo;</div>
+          <p class="body">Testimonio estructurado: situación antes de la cirugía, decisión, procedimiento y recuperación al año. En proceso de autorización.</p>
+          <div class="person">
+            <div class="pic"></div>
+            <div>
+              <div class="name">Paciente operado 2024</div>
+              <div class="detail">Prótesis de cadera &middot; Región Metropolitana</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="testimonials-note">Los resultados pueden variar según cada paciente. Los casos publicados contarán con consentimiento informado por escrito.</p>
+    </div>
+  </section>
+
+  <!-- ===== DISQUALIFICATION ===== -->
+  <section class="section-offwhite" id="para-quien">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-label">Para quién es (y para quién no)</div>
+        <h2>Esta cirugía no es para todos.</h2>
+        <p>Filtramos antes. Si no encajas en este perfil, preferimos decírtelo al inicio para que no inviertas tiempo ni dinero en una evaluación que no corresponde.</p>
+      </div>
+
+      <div class="fit-grid">
+        <article class="fit-card yes">
+          <h3>Esta cirugía es para ti si&hellip;</h3>
+          <ul class="fit-list">
+            <li>Tienes indicación médica previa de prótesis de cadera o rodilla.</li>
+            <li>Los tratamientos conservadores (kinesiología, infiltraciones, analgesia) ya no entregan alivio suficiente.</li>
+            <li>Puedes desplazarte a Clínica Monteblanco, Lo Barnechea, para la cirugía y controles.</li>
+            <li>Buscas una alternativa a las listas de espera del sistema público.</li>
+            <li>Quieres un valor fijo y cerrado en lugar de un presupuesto abierto.</li>
+          </ul>
+        </article>
+
+        <article class="fit-card no">
+          <h3>NO es para ti si&hellip;</h3>
+          <ul class="fit-list">
+            <li>No tienes estudios de imagen recientes (radiografía o resonancia).</li>
+            <li>Hay condiciones médicas no controladas que contraindican cirugía electiva.</li>
+            <li>No estás dispuesto a cumplir el plan de rehabilitación postoperatoria.</li>
+            <li>Esperas una definición clínica en la primera llamada, sin exámenes ni evaluación presencial.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-label">Preguntas frecuentes</div>
+        <h2>Lo que los pacientes preguntan primero.</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">¿Por qué este valor es menor que en grandes clínicas privadas?</button>
+          <div class="faq-a">
+            <p>Un centro quirúrgico focalizado en artroplastía no mantiene la infraestructura de un hospital general. No hay urgencias 24/7, UCI polivalente ni áreas no relacionadas. Esa diferencia estructural se traslada al valor de la cirugía, no a la calidad del equipo.</p>
+            <p>La prótesis, el pabellón y la hospitalización siguen el mismo estándar que en un prestador privado grande.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">¿Qué cubre exactamente los $7.500.000?</button>
+          <div class="faq-a">
+            <p>Honorarios del cirujano y equipo quirúrgico, prótesis seleccionada para tu caso, arriendo de pabellón en Clínica Monteblanco, hospitalización según protocolo, sesiones iniciales de kinesiología y controles médicos postoperatorios.</p>
+            <p>No cubre exámenes preoperatorios externos ni prótesis de diseño especial que requieran importación particular. Si tu caso necesita algo fuera del paquete, se informa por escrito antes de pagar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">¿Cómo es la recuperación?</button>
+          <div class="faq-a">
+            <p>En la mayoría de los casos, el paciente inicia marcha asistida al día siguiente de la cirugía. La hospitalización suele durar de 1 a 3 días según evolución.</p>
+            <p>La recuperación progresiva toma entre 3 y 6 meses, con control kinésico regular. Los tiempos y resultados pueden variar según edad, condición previa y adherencia al plan de rehabilitación.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">¿Qué pasa si hay complicaciones?</button>
+          <div class="faq-a">
+            <p>Clínica Monteblanco mantiene los protocolos de manejo de complicaciones propios de un centro quirúrgico acreditado. El Dr. Mardones y el equipo quirúrgico hacen el seguimiento postoperatorio directo.</p>
+            <p>Las complicaciones graves en cirugía de prótesis son infrecuentes pero posibles. Este tema se conversa en detalle durante la evaluación, junto con el consentimiento informado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">¿Aceptan Isapre o bonifica FONASA?</button>
+          <div class="faq-a">
+            <p>Para pacientes con Isapre, el costo neto suele bajar según el plan específico. Revisamos tu bonificación durante la evaluación, sin costo.</p>
+            <p>FONASA también puede bonificar parte de la prestación bajo modalidad libre elección, según el arancel vigente. Se revisa caso a caso.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">¿Puedo pagar en cuotas?</button>
+          <div class="faq-a">
+            <p>Sí. El programa contempla 10 cuotas a precio contado sin interés, con tarjeta de crédito. Existen opciones de financiamiento extendido con entidades bancarias, coordinadas durante la planificación.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">¿Cuánto tardo en entrar a pabellón desde que agendo?</button>
+          <div class="faq-a">
+            <p>Entre 2 y 4 semanas desde la evaluación inicial, dependiendo de los exámenes previos, la disponibilidad del equipo y la condición clínica. Las fechas se confirman por escrito antes de pagar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta" id="contacto">
+    <div class="wrap">
+      <h2>Empieza por saber si eres candidato.</h2>
+      <p>La evaluación es sin costo y la realiza un traumatólogo del equipo. Si no eres candidato, te lo decimos al inicio.</p>
+      <a href="https://wa.me/56944157542?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20cirug%C3%ADa%20de%20pr%C3%B3tesis" class="btn-gold">Agendar evaluación gratuita <span class="arrow">&rarr;</span></a>
+      <div class="micro-trust">Respuesta en 24 horas hábiles &middot; +56 9 4415 7542</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">Longevity <span style="color: var(--accent-gold);">ForCell</span></div>
+        <p class="about">Centro de medicina de prevención y medicina regenerativa. Campaña de cirugía de prótesis de cadera y rodilla realizada en convenio con Clínica Monteblanco, Lo Barnechea.</p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>+56 2 6465 9821</li>
+          <li>+56 9 4415 7542</li>
+          <li><a href="mailto:contacto@longevityforcell.cl">contacto@longevityforcell.cl</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Dirección</h4>
+        <ul>
+          <li>Av. José Alcalde Délano 10545</li>
+          <li>Oficina 205-206</li>
+          <li>Lo Barnechea, Santiago</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Tratamiento de datos personales</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legal-disclaimer">
+      <strong>Razón social:</strong> Longevity ForCell &middot; <strong>RUT:</strong> [RUT pendiente de publicación] &middot; <strong>Centro quirúrgico asociado:</strong> Clínica Monteblanco, Lo Barnechea.
+      <br><br>
+      Este contenido tiene fines informativos y no reemplaza la evaluación médica individual. Los resultados de la cirugía pueden variar según cada paciente, su condición previa, edad y adherencia al plan de rehabilitación. Toda cirugía electiva implica riesgos que se informan en detalle durante la consulta y el consentimiento informado. Las imágenes son referenciales.
+    </div>
+
+    <div class="legal-bar">
+      <span>&copy; 2026 Longevity ForCell. Todos los derechos reservados.</span>
+      <span>Sitio de campaña &middot; Información verificable en <a href="https://www.longevityforcell.cl" style="color: rgba(255,255,255,0.7);">longevityforcell.cl</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const expanded = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!expanded) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
