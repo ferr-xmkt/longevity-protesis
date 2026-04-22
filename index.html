@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cirugía de prótesis de cadera y rodilla en Santiago | Longevity ForCell</title>
-  <meta name="description" content="Cirugía de prótesis de cadera y rodilla con el Dr. Rodrigo Mardones (Fellowship Mayo Clinic) y el Dr. Tomás Ilić (Fellowship HSS Nueva York). Clínica Monteblanco, Lo Barnechea. Evaluación sin costo.">
+  <meta name="description" content="Equipo de 5 traumatólogos especialistas en cadera y rodilla. Fellowships Mayo Clinic, HSS Nueva York, McGill y Clínica Universidad de Navarra. Cirugía en Clínica Monteblanco, Lo Barnechea. Evaluación sin costo.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <meta property="og:title" content="Cirugía de prótesis de cadera y rodilla | Longevity ForCell">
-  <meta property="og:description" content="Dr. Rodrigo Mardones (cadera, Fellowship Mayo Clinic) y Dr. Tomás Ilić (rodilla, Fellowship HSS Nueva York). Clínica Monteblanco. Evaluación sin costo.">
+  <meta property="og:description" content="5 traumatólogos especialistas en cadera y rodilla. Fellowships Mayo Clinic, HSS Nueva York, McGill y Navarra. Clínica Monteblanco, Lo Barnechea. Evaluación sin costo.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="img/hero-clinic.jpg">
+  <meta property="og:image" content="img/hero-team.jpg">
 
   <style>
     :root {
@@ -66,11 +66,12 @@
       background: var(--neutral-white);
       line-height: 1.65;
       font-size: 17px;
+      overflow-x: hidden;
     }
 
     img { max-width: 100%; height: auto; display: block; }
 
-    .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+    .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 40px; }
 
     a { color: var(--brand-teal); text-decoration: none; }
     a:hover { color: var(--brand-teal-ink); }
@@ -78,31 +79,57 @@
     /* ========== NAV ========== */
     header {
       position: fixed; top: 0; width: 100%; z-index: 100;
-      background: var(--brand-teal-ink);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: var(--neutral-white);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.04);
     }
     header .wrap {
       display: flex; justify-content: space-between; align-items: center;
-      height: 72px;
+      height: 76px;
+      gap: 24px;
     }
     .logo {
-      font-family: var(--font-display);
-      font-size: 22px; font-weight: 500;
-      color: var(--neutral-white);
-      letter-spacing: 0.3px;
+      display: inline-flex; align-items: center;
+      flex-shrink: 0;
     }
-    .logo span { color: var(--accent-gold); font-weight: 600; }
+    .logo img {
+      height: 38px; width: auto; display: block;
+    }
+    .nav-menu {
+      display: flex; align-items: center; gap: 28px;
+      list-style: none;
+      margin: 0 auto;
+    }
+    .nav-menu a {
+      font-family: var(--font-sans);
+      font-size: 14px; font-weight: 500;
+      color: var(--ink-700);
+      letter-spacing: 0.2px;
+      transition: color .2s;
+      white-space: nowrap;
+    }
+    .nav-menu a:hover { color: var(--brand-teal); }
+    .nav-toggle {
+      display: none;
+      background: none; border: none; cursor: pointer;
+      padding: 8px; margin-right: -8px;
+      color: var(--ink-900);
+    }
+    .nav-toggle svg { display: block; width: 24px; height: 24px; }
     .btn-nav {
-      background: var(--accent-gold); color: var(--brand-teal-ink); border: none;
-      padding: 12px 24px; border-radius: var(--radius-pill);
+      background: var(--brand-teal-ink); color: var(--neutral-white); border: none;
+      padding: 12px 22px; border-radius: var(--radius-pill);
       font-family: var(--font-sans);
       font-size: 14px; font-weight: 600; cursor: pointer;
       letter-spacing: 0.3px;
       transition: background .2s, transform .15s;
       min-height: 44px;
       display: inline-flex; align-items: center;
+      flex-shrink: 0;
     }
-    .btn-nav:hover { background: var(--accent-gold-deep); transform: translateY(-1px); color: var(--brand-teal-ink); }
+    .btn-nav:hover { background: var(--brand-teal); transform: translateY(-1px); color: var(--neutral-white); }
+    .btn-nav .btn-nav-short { display: none; }
+    .btn-nav .btn-nav-full { display: inline; }
 
     /* ========== BUTTONS ========== */
     .btn-primary {
@@ -232,7 +259,7 @@
       border-radius: var(--radius-card);
       overflow: hidden;
       box-shadow: var(--shadow-hover);
-      aspect-ratio: 4/5;
+      aspect-ratio: 5/4;
       background: linear-gradient(135deg, var(--brand-teal) 0%, var(--brand-teal-ink) 100%);
     }
     .hero-visual .image-frame::after {
@@ -258,6 +285,26 @@
       display: flex; align-items: center; justify-content: center;
       font-family: var(--font-display);
       font-weight: 600; color: var(--brand-teal-ink);
+    }
+    .avatars-stack {
+      display: flex; align-items: center; flex-shrink: 0;
+    }
+    .avatars-stack img {
+      width: 40px; height: 40px; border-radius: 50%;
+      object-fit: cover; object-position: top center;
+      border: 2px solid var(--neutral-white);
+      margin-left: -10px;
+      background: var(--brand-teal-soft);
+    }
+    .avatars-stack img:first-child { margin-left: 0; }
+    .avatars-stack .avatars-more {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--brand-teal-ink); color: var(--neutral-white);
+      border: 2px solid var(--neutral-white);
+      font-family: var(--font-display);
+      font-size: 13px; font-weight: 600;
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-left: -10px;
     }
     .credential-card .info .name {
       font-weight: 600; color: var(--ink-900); font-size: 15px;
@@ -352,14 +399,74 @@
     .solution-grid {
       display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
     }
-    .solution-image {
+    .solution-facts {
+      background: linear-gradient(160deg, var(--brand-teal-ink) 0%, var(--brand-teal) 100%);
+      color: var(--neutral-white);
       border-radius: var(--radius-card);
+      padding: 40px 36px;
+      box-shadow: var(--shadow-hover);
+      position: relative;
       overflow: hidden;
-      aspect-ratio: 4/3;
-      background: linear-gradient(135deg, var(--brand-teal-soft) 0%, var(--brand-teal) 100%);
-      box-shadow: var(--shadow-card);
     }
-    .solution-image img { width: 100%; height: 100%; object-fit: cover; }
+    .solution-facts::before {
+      content: "";
+      position: absolute; top: -80px; right: -80px;
+      width: 240px; height: 240px;
+      background: radial-gradient(circle, rgba(201,169,110,0.22) 0%, rgba(201,169,110,0) 70%);
+      pointer-events: none;
+    }
+    .facts-head { margin-bottom: 28px; position: relative; }
+    .facts-label {
+      font-size: 12px; font-weight: 600;
+      color: var(--accent-gold);
+      letter-spacing: 2px; text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .facts-head h3 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.25;
+      color: var(--neutral-white);
+      letter-spacing: -0.01em;
+    }
+    .facts-list {
+      list-style: none;
+      display: flex; flex-direction: column;
+      gap: 18px;
+      padding: 24px 0;
+      border-top: 1px solid rgba(255,255,255,0.14);
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+      position: relative;
+    }
+    .facts-list li {
+      display: grid; grid-template-columns: 72px 1fr; gap: 16px;
+      align-items: baseline;
+    }
+    .facts-num {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1;
+      color: var(--accent-gold);
+      letter-spacing: -0.02em;
+    }
+    .facts-text {
+      font-size: 15px;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.88);
+    }
+    .facts-foot {
+      margin-top: 20px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      position: relative;
+    }
+    .facts-foot a {
+      color: var(--accent-gold);
+      text-decoration: underline;
+    }
+    .facts-foot a:hover { color: var(--neutral-white); }
     .solution-text h2 {
       font-family: var(--font-display);
       font-weight: 500;
@@ -473,6 +580,118 @@
       width: 10px; height: 2px; background: var(--accent-gold);
     }
     .credentials-list strong { color: var(--ink-900); font-weight: 600; }
+
+    /* ========== UNVALIDATED / TO CONFIRM ========== */
+    .tbd {
+      background: #FFF3CD;
+      color: #7A5A00;
+      padding: 1px 8px;
+      border-radius: 4px;
+      font-size: 0.92em;
+      font-weight: 600;
+      border: 1px dashed #D4A82A;
+      white-space: nowrap;
+    }
+    .tbd-block {
+      background: #FFF8E1;
+      border: 1px dashed #D4A82A;
+      border-radius: var(--radius-card);
+      padding: 16px 20px;
+      margin: 12px 0;
+      color: #5A4300;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .tbd-block strong { color: #7A5A00; }
+    .section-teal .tbd, .section-teal .tbd-block { color: #FFE9A3; border-color: #D4A82A; background: rgba(212, 168, 42, 0.15); }
+    .section-teal .tbd-block strong { color: #FFE9A3; }
+    .review-banner {
+      position: fixed; top: 76px; left: 0; right: 0;
+      z-index: 99;
+      background: #FFF3CD;
+      border-bottom: 2px dashed #D4A82A;
+      padding: 10px 20px;
+      color: #7A5A00;
+      font-size: 13px;
+      text-align: center;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+    .review-banner strong { color: #5A4300; }
+    body.review-mode { padding-top: 48px; }
+
+    /* ========== TEAM GRID ========== */
+    .team-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+    .team-card {
+      background: var(--neutral-white);
+      border: 1px solid rgba(0,111,115,0.12);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: box-shadow .2s, transform .2s, border-color .2s;
+    }
+    .team-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--brand-teal);
+      transform: translateY(-3px);
+    }
+    .team-photo {
+      aspect-ratio: 4/5;
+      background: linear-gradient(180deg, var(--brand-teal-soft) 0%, var(--brand-teal-ink) 100%);
+      overflow: hidden;
+    }
+    .team-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: top center;
+      display: block;
+    }
+    .team-photo--pair {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      background: var(--brand-teal-ink);
+    }
+    .team-photo--pair img { aspect-ratio: auto; }
+    .team-body { padding: 24px 24px 28px; }
+    .team-body h3 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 22px;
+      color: var(--ink-900);
+      line-height: 1.2;
+      margin-bottom: 4px;
+      letter-spacing: -0.01em;
+    }
+    .team-role {
+      font-family: var(--font-display);
+      font-size: 14px;
+      color: var(--brand-teal);
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    .team-creds {
+      list-style: none; padding: 0; margin: 0;
+    }
+    .team-creds li {
+      font-size: 14px; color: var(--ink-700);
+      padding-left: 16px; position: relative;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .team-creds li:last-child { margin-bottom: 0; }
+    .team-creds li::before {
+      content: ""; position: absolute; left: 0; top: 9px;
+      width: 8px; height: 2px; background: var(--accent-gold);
+    }
+    .team-creds strong { color: var(--ink-900); font-weight: 600; }
+    .team-cta {
+      margin-top: 56px;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 12px;
+    }
 
     /* ========== PROCESS ========== */
     .process-grid {
@@ -828,7 +1047,12 @@
       gap: 48px; margin-bottom: 64px;
     }
     footer .logo {
-      margin-bottom: 16px; display: block;
+      margin-bottom: 20px; display: inline-flex;
+    }
+    footer .footer-logo img {
+      height: 48px; width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.92;
     }
     footer .about {
       font-size: 14px; line-height: 1.65;
@@ -879,24 +1103,48 @@
       .doctor-grid--reverse .doctor-info { order: 2; }
       .doctor-grid--reverse .doctor-portrait { order: 1; }
       .problem-grid, .process-grid, .testimonials-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
       .fit-grid { grid-template-columns: 1fr; }
       .credentials-list { grid-template-columns: 1fr; gap: 12px; }
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
       section { padding: 72px 0; }
     }
 
+    @media (max-width: 1040px) {
+      .nav-menu { display: none; }
+      .nav-menu.is-open {
+        display: flex; flex-direction: column; gap: 0;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--neutral-white);
+        padding: 16px 24px 24px;
+        border-top: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+      }
+      .nav-menu.is-open li { width: 100%; border-bottom: 1px solid rgba(0,0,0,0.04); }
+      .nav-menu.is-open li:last-child { border-bottom: none; }
+      .nav-menu.is-open a { display: block; padding: 14px 0; font-size: 15px; }
+      .nav-toggle { display: inline-flex; align-items: center; justify-content: center; margin-left: auto; }
+      header .wrap { position: relative; }
+    }
+
     @media (max-width: 600px) {
       body { font-size: 16px; }
-      .wrap { padding: 0 20px; }
-      header .wrap { height: 64px; }
-      .logo { font-size: 18px; }
-      .btn-nav { padding: 10px 18px; font-size: 13px; }
+      .wrap { padding: 0 24px; }
+      header .wrap { height: 64px; gap: 8px; padding: 0 24px; }
+      .logo img { height: 28px; }
+      .nav-toggle { padding: 6px; }
+      .nav-toggle svg { width: 22px; height: 22px; }
+      .btn-nav { padding: 9px 14px; font-size: 12px; min-height: 36px; letter-spacing: 0.2px; }
+      .btn-nav .btn-nav-full { display: none; }
+      .btn-nav .btn-nav-short { display: inline; }
+      h1, h2, h3 { overflow-wrap: break-word; word-break: normal; hyphens: auto; }
       .hero h1 { font-size: 36px; }
       .hero .sub { font-size: 16px; }
       .hero-metrics { grid-template-columns: 1fr; gap: 16px; padding: 16px 0; }
       .metric .num { font-size: 26px; }
       .section-head h2 { font-size: 28px; }
       .footer-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr; gap: 20px; }
       .btn-primary, .btn-gold { width: 100%; justify-content: center; }
       .hero-cta-row { flex-direction: column; align-items: stretch; }
       .price-card { padding: 28px 24px; }
@@ -911,12 +1159,31 @@
     }
   </style>
 </head>
-<body>
+<body class="review-mode">
+
+<div class="review-banner">
+  <strong>Versión preliminar para revisión</strong> &middot; Los datos marcados en <span class="tbd">[POR CONFIRMAR]</span> están pendientes de validación clínica y comercial. Confirmar o ajustar antes de publicar.
+</div>
 
 <header>
   <div class="wrap">
-    <a href="#" class="logo">Longevity <span>ForCell</span></a>
-    <a href="#contacto" class="btn-nav">Agendar evaluación</a>
+    <a href="https://www.longevityforcell.cl/" class="logo" aria-label="Longevity ForCell — Ir al sitio principal">
+      <img src="img/logo-longevity.png" alt="Longevity ForCell" />
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-menu">
+        <li><a href="https://www.longevityforcell.cl/">Home</a></li>
+        <li><a href="https://www.longevityforcell.cl/especialistas-medicos/">Especialistas</a></li>
+        <li><a href="https://www.longevityforcell.cl/nosotros/">Nosotros</a></li>
+        <li><a href="https://www.longevityforcell.cl/centro-y-consulta/">Centro y Consulta</a></li>
+        <li><a href="https://www.longevityforcell.cl/contacto/">Contacto</a></li>
+        <li><a href="https://www.longevityforcell.cl/blog/">Blog</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <a href="#contacto" class="btn-nav"><span class="btn-nav-full">Agendar evaluación</span><span class="btn-nav-short">Agendar</span></a>
   </div>
 </header>
 
@@ -927,38 +1194,44 @@
     <div class="wrap">
       <div class="hero-copy">
         <div class="eyebrow"><span class="dot"></span>Programa 2026 &middot; Cadera y rodilla</div>
-        <h1>Cirugía de prótesis de <em>cadera y rodilla</em> en Santiago. Con el Dr. Rodrigo Mardones y el Dr. Tomás Ilić.</h1>
-        <p class="sub">Dr. Mardones (cadera) con Fellowship en Mayo Clinic y más de 20 años de experiencia. Dr. Ilić (rodilla) con Fellowship en Hospital for Special Surgery (HSS), Nueva York. Operación en Clínica Monteblanco, Lo Barnechea. Evaluación previa sin costo para confirmar si eres candidato.</p>
+        <h1>Cirugía de prótesis de <em>cadera y rodilla</em> en Santiago. Con el equipo de traumatología de Longevity ForCell.</h1>
+        <p class="sub">Cinco traumatólogos especialistas con Fellowships en Mayo Clinic, Hospital for Special Surgery (Nueva York), McGill y Clínica Universidad de Navarra. Cirugía en Clínica Monteblanco, Lo Barnechea. Evaluación previa sin costo para confirmar si eres candidato.</p>
 
         <div class="hero-metrics">
           <div class="metric">
-            <div class="num">20+</div>
-            <div class="label">años en artroplastía de cadera</div>
+            <div class="num">5.000+</div>
+            <div class="label">horas en cirugía del equipo líder</div>
           </div>
           <div class="metric">
-            <div class="num">5.000+</div>
-            <div class="label">horas quirúrgicas acumuladas</div>
+            <div class="num">3.000+</div>
+            <div class="label">pacientes dados de alta</div>
           </div>
           <div class="metric">
             <div class="num">$7,5M</div>
-            <div class="label">cirugía con 10 cuotas a precio contado</div>
+            <div class="label">10 cuotas a precio contado</div>
           </div>
         </div>
 
         <div class="hero-cta-row">
           <a href="#contacto" class="btn-primary">Agendar evaluación gratuita <span class="arrow">&rarr;</span></a>
-          <span class="micro-trust">Respuesta en 24 horas hábiles</span>
+          <span class="micro-trust">Evaluación presencial sin costo</span>
         </div>
       </div>
 
       <div class="hero-visual">
         <div class="image-frame">
-          <img src="img/hero-clinic.jpg" alt="Equipo de traumatología operando en pabellón de Clínica Monteblanco">
+          <img src="img/hero-team.jpg" alt="Equipo de traumatología de Longevity ForCell: Dr. Mardones, Dr. Musa, Dr. Ilić y Dr. Vega">
           <div class="credential-card">
-            <div class="avatar">RM</div>
+            <div class="avatars-stack" aria-hidden="true">
+              <img src="img/team-mardones.png" alt="">
+              <img src="img/team-ilic.png" alt="">
+              <img src="img/team-musa.png" alt="">
+              <img src="img/team-monsalvo.png" alt="">
+              <img src="img/team-vega.png" alt="">
+            </div>
             <div class="info">
-              <div class="name">Dr. Rodrigo Mardones</div>
-              <div class="role">Fellowship Mayo Clinic &middot; Clínica Monteblanco</div>
+              <div class="name">Equipo de traumatología</div>
+              <div class="role">5 especialistas cadera y rodilla &middot; Clínica Monteblanco</div>
             </div>
           </div>
         </div>
@@ -977,25 +1250,25 @@
 
       <div class="problem-grid">
         <article class="problem-card">
-          <div class="num">1,5&ndash;3 años</div>
+          <div class="num"><span class="tbd">[TIEMPO POR CONFIRMAR]</span></div>
           <h3>Espera promedio en el sistema público</h3>
           <p>Plazo frecuente para una cirugía programada de cadera o rodilla. Mientras tanto, el paciente sigue con tratamiento conservador y analgesia.</p>
         </article>
 
         <article class="problem-card">
-          <div class="num">$10M&ndash;$18M</div>
+          <div class="num"><span class="tbd">$[RANGO POR CONFIRMAR]</span></div>
           <h3>Rango en grandes clínicas privadas</h3>
           <p>Valor habitual para artroplastía de cadera o rodilla en prestadores privados de Santiago, según bonificación del plan de salud.</p>
         </article>
 
         <article class="problem-card">
-          <div class="num">Decenas de miles</div>
+          <div class="num"><span class="tbd">[CIFRA POR CONFIRMAR]</span></div>
           <h3>Pacientes en lista nacional</h3>
           <p>Registro FONASA de artroplastía acumula miles de casos año tras año. La demanda supera la capacidad instalada del sistema.</p>
         </article>
       </div>
 
-      <p class="problem-note">Fuentes: estimaciones en base a datos públicos FONASA y observación de prestadores privados de la Región Metropolitana, 2024&ndash;2025.</p>
+      <div class="tbd-block"><strong>[POR CONFIRMAR]</strong> Fuentes de estos 3 datos. Propuesta original: estimaciones FONASA + observación prestadores privados RM 2024–2025. ¿Dr. Rodrigo tiene referencias específicas que podamos citar?</div>
     </div>
   </section>
 
@@ -1003,9 +1276,19 @@
   <section class="section-cream" id="solucion">
     <div class="wrap">
       <div class="solution-grid">
-        <div class="solution-image">
-          <img src="img/pabellon.jpg" alt="Pabellón quirúrgico equipado de Clínica Monteblanco en Lo Barnechea">
-        </div>
+        <aside class="solution-facts">
+          <div class="facts-head">
+            <div class="facts-label">Clínica Monteblanco</div>
+            <h3>Un centro quirúrgico focalizado en cadera y rodilla</h3>
+          </div>
+          <ul class="facts-list">
+            <li><span class="facts-num">5</span><span class="facts-text">traumatólogos especialistas <span class="tbd">[confirmar: ¿los 5 del equipo participan activamente en esta campaña?]</span></span></li>
+            <li><span class="facts-num">3.000+</span><span class="facts-text">pacientes dados de alta por el Dr. Mardones</span></li>
+            <li><span class="facts-num">99%</span><span class="facts-text">de casos exitosos (Dr. Mardones)</span></li>
+            <li><span class="facts-num">4</span><span class="facts-text">Fellowships internacionales: Mayo Clinic, HSS, McGill, Navarra</span></li>
+          </ul>
+          <p class="facts-foot">Información verificable en <a href="https://www.longevityforcell.cl/especialistas-medicos/" target="_blank" rel="noopener">longevityforcell.cl</a></p>
+        </aside>
 
         <div class="solution-text">
           <div class="eyebrow"><span class="dot"></span>Cómo lo hacemos</div>
@@ -1014,76 +1297,97 @@
           <p>La evaluación la realiza el traumatólogo especialista. Si eres candidato, recibes un plan claro con fechas, exámenes previos y detalle del postoperatorio.</p>
 
           <ul class="solution-bullets">
-            <li><strong>Equipo completo:</strong> 5 traumatólogos especialistas en cadera y rodilla, radiólogo dedicado y evaluación nutricional.</li>
-            <li><strong>Prótesis seleccionada por caso:</strong> el material se escoge según edad, actividad y anatomía. No hay catálogo único.</li>
-            <li><strong>Recuperación progresiva:</strong> marcha asistida al día siguiente en la mayoría de los casos. Rehabilitación kinésica incluida en el paquete.</li>
+            <li><strong>Equipo completo:</strong> 5 traumatólogos especialistas en cadera y rodilla, con Fellowships en Mayo Clinic, HSS, McGill y Navarra.</li>
+            <li><strong>Prótesis seleccionada por caso:</strong> el material se escoge según edad, actividad y anatomía. No hay catálogo único. <span class="tbd">[confirmar: ¿trabajan con múltiples marcas/tipos?]</span></li>
+            <li><strong>Recuperación progresiva:</strong> <span class="tbd">[confirmar: marcha asistida al día siguiente en la mayoría de los casos]</span>. Rehabilitación kinésica incluida en el paquete <span class="tbd">[confirmar N° sesiones]</span>.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== DOCTOR SPOTLIGHT — CADERA ===== -->
-  <section class="doctor-spotlight" id="cirujano-cadera">
+  <!-- ===== TEAM ===== -->
+  <section class="team-section section-cream" id="equipo">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-label">Quiénes operan</div>
-        <h2>Dos especialistas. Una por articulación.</h2>
-        <p>La cirugía de cadera y la de rodilla son procedimientos distintos. Cada una la realiza el cirujano con mayor experiencia en esa articulación.</p>
+        <div class="section-label">El equipo detrás de tu cirugía</div>
+        <h2>Cinco traumatólogos especialistas en cadera y rodilla.</h2>
+        <p>No dependes de un único cirujano. El caso se revisa en equipo para definir la mejor técnica, prótesis y momento quirúrgico. Todas las credenciales son verificables en el sitio principal de Longevity ForCell.</p>
       </div>
 
-      <div class="doctor-grid">
-        <div class="doctor-portrait">
-          <img src="img/dr-mardones.jpg" alt="Retrato del Dr. Rodrigo Mardones, cirujano ortopédico de cadera">
-          <div class="badge">Cirujano de cadera</div>
-        </div>
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-photo"><img src="img/team-mardones.png" alt="Dr. Rodrigo Mardones"></div>
+          <div class="team-body">
+            <h3>Dr. Rodrigo Mardones</h3>
+            <p class="team-role">Cadera y rodilla</p>
+            <ul class="team-creds">
+              <li>Fellowship Mayo Clinic, Rochester</li>
+              <li>Past President Sociedad Chilena de Cadera</li>
+              <li>Past President ISHA</li>
+              <li>20+ años en artroplastia de cadera</li>
+            </ul>
+          </div>
+        </article>
 
-        <div class="doctor-info">
-          <div class="eyebrow"><span class="dot"></span>Cadera</div>
-          <h3 class="doctor-name">Dr. Rodrigo Mardones</h3>
-          <p class="title">Cirujano ortopédico &middot; especialista en cadera</p>
-          <p>Volvió a Chile después de su Fellowship en cirugía articular reconstructiva en Mayo Clinic, Rochester. Desde entonces ha concentrado su práctica en dos cosas: operar cadera con técnicas de preservación articular y acompañar a pacientes que necesitan prótesis cuando ya no hay opción conservadora.</p>
-          <p>Trabaja con criterio claro: la cirugía de prótesis se indica cuando el dolor es persistente, limita la movilidad y los tratamientos conservadores ya no entregan alivio suficiente.</p>
+        <article class="team-card">
+          <div class="team-photo"><img src="img/team-ilic.png" alt="Dr. Tomás Ilić"></div>
+          <div class="team-body">
+            <h3>Dr. Tomás Ilić</h3>
+            <p class="team-role">Cadera y rodilla</p>
+            <ul class="team-creds">
+              <li>Fellow Hospital for Special Surgery (HSS), Nueva York</li>
+              <li>Postgrado Clínica Universidad de Navarra, España</li>
+              <li>15+ años de experiencia</li>
+              <li>Docencia Universidad Andrés Bello</li>
+            </ul>
+          </div>
+        </article>
 
-          <ul class="credentials-list">
-            <li><strong>Universidad de Chile</strong>, médico cirujano</li>
-            <li><strong>Universidad Católica</strong>, especialización en ortopedia</li>
-            <li><strong>Fellowship Mayo Clinic</strong>, Rochester, Minnesota</li>
-            <li><strong>Más de 20 años</strong> en artroplastía de cadera</li>
-            <li><strong>Pionero</strong> en técnicas de cirugía conservadora de cadera en Chile</li>
-          </ul>
-        </div>
+        <article class="team-card">
+          <div class="team-photo"><img src="img/team-musa.png" alt="Dr. Carlo Musa"></div>
+          <div class="team-body">
+            <h3>Dr. Carlo Musa</h3>
+            <p class="team-role">Cadera y rodilla</p>
+            <ul class="team-creds">
+              <li>Fellow NYU, Hospital for Joint Diseases (artroscopía)</li>
+              <li>Fellow McGill, Royal Victoria Hospital (prótesis)</li>
+              <li>Staff Clínica Las Condes 1987–2025</li>
+              <li>Ex Jefe Departamento de Traumatología</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo"><img src="img/team-monsalvo.png" alt="Dr. Francisco Monsalvo"></div>
+          <div class="team-body">
+            <h3>Dr. Francisco Monsalvo</h3>
+            <p class="team-role">Cadera</p>
+            <ul class="team-creds">
+              <li>Médico cirujano Universidad Libre de Colombia</li>
+              <li>Especialización en Traumatología y Ortopedia, USACH</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo"><img src="img/team-vega.png" alt="Dr. Daniel Vega"></div>
+          <div class="team-body">
+            <h3>Dr. Daniel Vega</h3>
+            <p class="team-role">Artroscopia de rodilla</p>
+            <ul class="team-creds">
+              <li>10+ años en clínicas líderes</li>
+              <li>Formación en centros Reino Unido y EE. UU.</li>
+              <li>Cirugía reconstructiva de rodilla y hombro</li>
+            </ul>
+          </div>
+        </article>
+
       </div>
-    </div>
-  </section>
 
-  <!-- ===== DOCTOR SPOTLIGHT — RODILLA ===== -->
-  <section class="doctor-spotlight doctor-spotlight--alt" id="cirujano-rodilla">
-    <div class="wrap">
-      <div class="doctor-grid doctor-grid--reverse">
-        <div class="doctor-info">
-          <div class="eyebrow"><span class="dot"></span>Rodilla</div>
-          <h3 class="doctor-name">Dr. Tomás Ilić</h3>
-          <p class="title">Cirujano ortopédico &middot; especialista en rodilla</p>
-          <p>Formación quirúrgica completa en dos centros de referencia internacional: el Hospital for Special Surgery (HSS) en Nueva York, reconocido como uno de los principales centros de cirugía articular del mundo, y la Universidad de Navarra en España.</p>
-          <p>En Clínica Monteblanco realiza artroplastía de rodilla, tratamiento quirúrgico de artrosis y reconstrucción articular del adulto con un enfoque centrado en recuperar función y movilidad.</p>
-
-          <ul class="credentials-list">
-            <li><strong>Universidad de los Andes</strong>, médico cirujano</li>
-            <li><strong>Universidad de Valparaíso</strong>, especialización en ortopedia</li>
-            <li><strong>Universidad de Navarra</strong>, España &mdash; postgrado cadera y rodilla</li>
-            <li><strong>Fellowship Hospital for Special Surgery (HSS)</strong>, Nueva York</li>
-            <li><strong>Más de 15 años</strong> de experiencia en ortopedia</li>
-            <li><strong>Docente</strong> Universidad Andrés Bello</li>
-          </ul>
-
-          <a href="#contacto" class="btn-primary">Revisar mi caso con el equipo <span class="arrow">&rarr;</span></a>
-        </div>
-
-        <div class="doctor-portrait">
-          <img src="img/dr-ilic.jpg" alt="Retrato del Dr. Tomás Ilić, cirujano ortopédico de rodilla">
-          <div class="badge">Cirujano de rodilla</div>
-        </div>
+      <div class="team-cta">
+        <a href="#contacto" class="btn-primary">Revisar mi caso con el equipo <span class="arrow">&rarr;</span></a>
+        <span class="micro-trust">Evaluación presencial sin costo</span>
       </div>
     </div>
   </section>
@@ -1102,21 +1406,21 @@
           <div class="step-num">Paso 01</div>
           <h3>Evaluación</h3>
           <p>Un traumatólogo revisa tus exámenes previos y te confirma si eres candidato a cirugía. Si lo eres, se coordinan los estudios que falten.</p>
-          <span class="duration">Sin costo &middot; 45 min</span>
+          <span class="duration">Presencial &middot; Sin costo</span>
         </article>
 
         <article class="process-step">
           <div class="step-num">Paso 02</div>
           <h3>Planificación</h3>
           <p>El equipo define la prótesis indicada para tu caso, la fecha de cirugía y el plan de rehabilitación. Recibes el detalle por escrito antes de pagar.</p>
-          <span class="duration">2 a 4 semanas</span>
+          <span class="duration"><span class="tbd">[PLAZO POR CONFIRMAR]</span></span>
         </article>
 
         <article class="process-step">
           <div class="step-num">Paso 03</div>
           <h3>Cirugía y recuperación</h3>
-          <p>Operación en Clínica Monteblanco con anestesia según protocolo. Hospitalización 1 a 3 días. Kinesiología dentro del paquete.</p>
-          <span class="duration">Recuperación 3 a 6 meses</span>
+          <p>Operación en Clínica Monteblanco con anestesia según protocolo. <span class="tbd">[Hospitalización: confirmar días]</span>. Kinesiología dentro del paquete.</p>
+          <span class="duration"><span class="tbd">[Recuperación: confirmar plazo]</span></span>
         </article>
       </div>
     </div>
@@ -1130,90 +1434,36 @@
           <div class="eyebrow"><span class="dot"></span>Cuánto cuesta y qué incluye</div>
           <h3>Un valor fijo y transparente. Sin cobros sorpresa.</h3>
           <p>El paquete cubre los honorarios del equipo, la prótesis seleccionada, el pabellón, la hospitalización según protocolo y las sesiones iniciales de kinesiología.</p>
-          <p>Para pacientes con Isapre, el costo neto baja según el plan. Revisamos tu bonificación durante la evaluación, sin costo.</p>
+          <p><strong>100% particular.</strong> Esta campaña no bonifica con Isapre ni FONASA. El valor publicado ya es el valor final. Existe financiamiento directo para facilitar el pago.</p>
 
           <div class="price-compare">
             <div class="comp-label">Rango observado en otros prestadores</div>
-            <div class="comp-range">$10.000.000 &ndash; $18.000.000</div>
-            <small>Prestadores privados, Región Metropolitana, 2024&ndash;2025. Valor final depende de plan de salud y tipo de prótesis.</small>
+            <div class="comp-range"><span class="tbd">$[RANGO POR CONFIRMAR]</span></div>
+            <small>Prestadores privados, Región Metropolitana, 2024&ndash;2025. <span class="tbd">[confirmar si usamos este comparativo o lo eliminamos]</span></small>
           </div>
         </div>
 
         <div class="price-card">
           <div class="tag">Programa 2026</div>
-          <div class="label">Cirugía de prótesis</div>
+          <div class="label">Cirugía de prótesis de cadera o rodilla</div>
           <div class="amount"><span class="currency">$</span>7.500.000</div>
-          <div class="sub"><strong>10 cuotas a precio contado</strong> sin interés, con tarjeta de crédito.</div>
+          <div class="sub"><strong>10 cuotas a precio contado</strong> sin interés. Financiamiento directo disponible.</div>
 
           <div class="divider"></div>
 
           <div class="includes-title">Incluye</div>
           <ul class="includes-list">
             <li>Honorarios del cirujano y equipo quirúrgico</li>
-            <li>Prótesis seleccionada para tu caso</li>
+            <li>Prótesis seleccionada según tu caso</li>
             <li>Pabellón en Clínica Monteblanco</li>
             <li>Hospitalización según protocolo</li>
-            <li>Sesiones iniciales de kinesiología</li>
-            <li>Controles médicos postoperatorios</li>
+            <li>Sesiones iniciales de kinesiología <span class="tbd">[confirmar N° sesiones]</span></li>
+            <li>Controles médicos postoperatorios <span class="tbd">[confirmar cuántos]</span></li>
           </ul>
 
           <a href="#contacto" class="btn-gold">Ver si soy candidato <span class="arrow">&rarr;</span></a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ===== TESTIMONIALS ===== -->
-  <section id="pacientes">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="section-label">Pacientes operados</div>
-        <h2>Casos reales del equipo</h2>
-        <p>Estamos recopilando testimonios de pacientes recientes con su autorización escrita. Esta sección se actualiza durante 2026 con casos verificables.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <article class="testimonial placeholder">
-          <span class="placeholder-tag">Próximamente</span>
-          <div class="quote-mark">&ldquo;</div>
-          <p class="body">Testimonio estructurado: situación antes de la cirugía, decisión, procedimiento y recuperación a los 3 meses. En proceso de autorización.</p>
-          <div class="person">
-            <div class="pic"></div>
-            <div>
-              <div class="name">Paciente operado 2025</div>
-              <div class="detail">Prótesis de cadera &middot; Santiago</div>
-            </div>
-          </div>
-        </article>
-
-        <article class="testimonial placeholder">
-          <span class="placeholder-tag">Próximamente</span>
-          <div class="quote-mark">&ldquo;</div>
-          <p class="body">Testimonio estructurado: situación antes de la cirugía, decisión, procedimiento y recuperación a los 6 meses. En proceso de autorización.</p>
-          <div class="person">
-            <div class="pic"></div>
-            <div>
-              <div class="name">Paciente operado 2025</div>
-              <div class="detail">Prótesis de rodilla &middot; Santiago</div>
-            </div>
-          </div>
-        </article>
-
-        <article class="testimonial placeholder">
-          <span class="placeholder-tag">Próximamente</span>
-          <div class="quote-mark">&ldquo;</div>
-          <p class="body">Testimonio estructurado: situación antes de la cirugía, decisión, procedimiento y recuperación al año. En proceso de autorización.</p>
-          <div class="person">
-            <div class="pic"></div>
-            <div>
-              <div class="name">Paciente operado 2024</div>
-              <div class="detail">Prótesis de cadera &middot; Región Metropolitana</div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <p class="testimonials-note">Los resultados pueden variar según cada paciente. Los casos publicados contarán con consentimiento informado por escrito.</p>
     </div>
   </section>
 
@@ -1263,7 +1513,7 @@
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">¿Por qué este valor es menor que en grandes clínicas privadas?</button>
           <div class="faq-a">
-            <p>Un centro quirúrgico focalizado en artroplastía no mantiene la infraestructura de un hospital general. No hay urgencias 24/7, UCI polivalente ni áreas no relacionadas. Esa diferencia estructural se traslada al valor de la cirugía, no a la calidad del equipo.</p>
+            <p>Un centro quirúrgico focalizado en artroplastía no mantiene la infraestructura de un hospital general. No hay urgencias 24/7, UCI polivalente ni áreas no relacionadas. Esa diferencia estructural se traslada al valor de la cirugía, no a la calidad del equipo. <span class="tbd">[confirmar argumento con Dr. Rodrigo]</span></p>
             <p>La prótesis, el pabellón y la hospitalización siguen el mismo estándar que en un prestador privado grande.</p>
           </div>
         </div>
@@ -1272,22 +1522,22 @@
           <button class="faq-q" aria-expanded="false">¿Qué cubre exactamente los $7.500.000?</button>
           <div class="faq-a">
             <p>Honorarios del cirujano y equipo quirúrgico, prótesis seleccionada para tu caso, arriendo de pabellón en Clínica Monteblanco, hospitalización según protocolo, sesiones iniciales de kinesiología y controles médicos postoperatorios.</p>
-            <p>No cubre exámenes preoperatorios externos ni prótesis de diseño especial que requieran importación particular. Si tu caso necesita algo fuera del paquete, se informa por escrito antes de pagar.</p>
+            <p>No cubre exámenes preoperatorios externos ni prótesis de diseño especial que requieran importación particular. Si tu caso necesita algo fuera del paquete, se informa por escrito antes de pagar. <span class="tbd">[confirmar inclusiones/exclusiones específicas]</span></p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">¿Cómo es la recuperación?</button>
           <div class="faq-a">
-            <p>En la mayoría de los casos, el paciente inicia marcha asistida al día siguiente de la cirugía. La hospitalización suele durar de 1 a 3 días según evolución.</p>
-            <p>La recuperación progresiva toma entre 3 y 6 meses, con control kinésico regular. Los tiempos y resultados pueden variar según edad, condición previa y adherencia al plan de rehabilitación.</p>
+            <p><span class="tbd">[POR CONFIRMAR: marcha asistida al día siguiente, hospitalización 1 a 3 días]</span></p>
+            <p><span class="tbd">[POR CONFIRMAR: recuperación progresiva 3 a 6 meses]</span>, con control kinésico regular. Los tiempos y resultados pueden variar según edad, condición previa y adherencia al plan de rehabilitación.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">¿Qué pasa si hay complicaciones?</button>
           <div class="faq-a">
-            <p>Clínica Monteblanco mantiene los protocolos de manejo de complicaciones propios de un centro quirúrgico acreditado. El Dr. Mardones y el equipo quirúrgico hacen el seguimiento postoperatorio directo.</p>
+            <p>Clínica Monteblanco mantiene los protocolos de manejo de complicaciones propios de un centro quirúrgico acreditado. El equipo quirúrgico hace el seguimiento postoperatorio directo.</p>
             <p>Las complicaciones graves en cirugía de prótesis son infrecuentes pero posibles. Este tema se conversa en detalle durante la evaluación, junto con el consentimiento informado.</p>
           </div>
         </div>
@@ -1295,22 +1545,21 @@
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">¿Aceptan Isapre o bonifica FONASA?</button>
           <div class="faq-a">
-            <p>Para pacientes con Isapre, el costo neto suele bajar según el plan específico. Revisamos tu bonificación durante la evaluación, sin costo.</p>
-            <p>FONASA también puede bonificar parte de la prestación bajo modalidad libre elección, según el arancel vigente. Se revisa caso a caso.</p>
+            <p>Esta campaña es 100% particular. El valor de $7.500.000 no se bonifica con Isapre ni con FONASA. El precio publicado es el valor final — sin cobros adicionales por ese concepto.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">¿Puedo pagar en cuotas?</button>
           <div class="faq-a">
-            <p>Sí. El programa contempla 10 cuotas a precio contado sin interés, con tarjeta de crédito. Existen opciones de financiamiento extendido con entidades bancarias, coordinadas durante la planificación.</p>
+            <p>Sí. El programa contempla <strong>10 cuotas a precio contado sin interés</strong>. Además ofrecemos financiamiento directo, coordinado durante la planificación quirúrgica.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">¿Cuánto tardo en entrar a pabellón desde que agendo?</button>
           <div class="faq-a">
-            <p>Entre 2 y 4 semanas desde la evaluación inicial, dependiendo de los exámenes previos, la disponibilidad del equipo y la condición clínica. Las fechas se confirman por escrito antes de pagar.</p>
+            <p><span class="tbd">[POR CONFIRMAR: plazo evaluación → pabellón]</span>. Las fechas se confirman por escrito antes de pagar.</p>
           </div>
         </div>
       </div>
@@ -1321,9 +1570,10 @@
   <section class="final-cta" id="contacto">
     <div class="wrap">
       <h2>Empieza por saber si eres candidato.</h2>
-      <p>La evaluación es sin costo y la realiza un traumatólogo del equipo. Si no eres candidato, te lo decimos al inicio.</p>
+      <p>La evaluación presencial es sin costo y la realiza un traumatólogo del equipo. Si no eres candidato, te lo decimos al inicio.</p>
+      <div class="tbd-block"><strong>[POR INTEGRAR]</strong> Aquí va el <strong>formulario de captura</strong> conectado a GHL (pipeline nuevo "Prótesis Cadera y Rodilla 2026"). Campos: nombre, teléfono, email, articulación (cadera/rodilla/ambas), edad, tiempo con dolor, ¿tiene exámenes?, comentario. Pendiente de creación en GHL.</div>
       <a href="https://wa.me/56944157542?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20cirug%C3%ADa%20de%20pr%C3%B3tesis" class="btn-gold">Agendar evaluación gratuita <span class="arrow">&rarr;</span></a>
-      <div class="micro-trust">Respuesta en 24 horas hábiles &middot; +56 9 4415 7542</div>
+      <div class="micro-trust">Evaluación presencial sin costo &middot; +56 9 4415 7542 <span class="tbd">[confirmar N° para esta campaña]</span></div>
     </div>
   </section>
 
@@ -1334,15 +1584,18 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="logo">Longevity <span style="color: var(--accent-gold);">ForCell</span></div>
-        <p class="about">Centro de medicina de prevención y medicina regenerativa. Campaña de cirugía de prótesis de cadera y rodilla realizada en convenio con Clínica Monteblanco, Lo Barnechea.</p>
+        <a href="https://www.longevityforcell.cl/" class="logo footer-logo" aria-label="Longevity ForCell">
+          <img src="img/logo-longevity.png" alt="Longevity ForCell" />
+        </a>
+        <p class="about">Centro de medicina de prevención y medicina regenerativa. Campaña de cirugía de prótesis de cadera y rodilla realizada en Clínica Monteblanco, Lo Barnechea.</p>
       </div>
 
       <div>
         <h4>Contacto</h4>
         <ul>
-          <li>+56 2 6465 9821</li>
-          <li>+56 9 4415 7542</li>
+          <li><a href="tel:+56264659821">+56 2 6465 9821</a></li>
+          <li><a href="tel:+56944157542">+56 9 4415 7542</a></li>
+          <li><a href="tel:+56927484469">+56 9 2748 4469</a></li>
           <li><a href="mailto:contacto@longevityforcell.cl">contacto@longevityforcell.cl</a></li>
         </ul>
       </div>
@@ -1357,17 +1610,19 @@
       </div>
 
       <div>
-        <h4>Legal</h4>
+        <h4>Menú</h4>
         <ul>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">Tratamiento de datos personales</a></li>
+          <li><a href="https://www.longevityforcell.cl/">Home</a></li>
+          <li><a href="https://www.longevityforcell.cl/especialistas-medicos/">Especialistas</a></li>
+          <li><a href="https://www.longevityforcell.cl/nosotros/">Nosotros</a></li>
+          <li><a href="https://www.longevityforcell.cl/centro-y-consulta/">Centro y Consulta</a></li>
+          <li><a href="https://www.longevityforcell.cl/contacto/">Contacto</a></li>
         </ul>
       </div>
     </div>
 
     <div class="legal-disclaimer">
-      <strong>Razón social:</strong> Longevity ForCell &middot; <strong>RUT:</strong> [RUT pendiente de publicación] &middot; <strong>Centro quirúrgico asociado:</strong> Clínica Monteblanco, Lo Barnechea.
+      <strong>Razón social:</strong> <span class="tbd">[razón social POR CONFIRMAR]</span> &middot; <strong>RUT:</strong> <span class="tbd">[RUT POR CONFIRMAR]</span> &middot; <strong>Centro quirúrgico asociado:</strong> Clínica Monteblanco, Lo Barnechea.
       <br><br>
       Este contenido tiene fines informativos y no reemplaza la evaluación médica individual. Los resultados de la cirugía pueden variar según cada paciente, su condición previa, edad y adherencia al plan de rehabilitación. Toda cirugía electiva implica riesgos que se informan en detalle durante la consulta y el consentimiento informado. Las imágenes son referenciales.
     </div>
@@ -1380,6 +1635,23 @@
 </footer>
 
 <script>
+  // Mobile nav toggle
+  (function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var menu = document.querySelector('.nav-menu');
+    if (!toggle || !menu) return;
+    toggle.addEventListener('click', function () {
+      var open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        menu.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+
   // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {
