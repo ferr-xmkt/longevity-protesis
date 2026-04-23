@@ -14,6 +14,7 @@
   <meta property="og:description" content="5 traumatólogos especialistas en cadera y rodilla. Fellowships Mayo Clinic, HSS Nueva York, McGill y Navarra. Clínica Monteblanco, Lo Barnechea. Evaluación sin costo.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="img/hero-team.jpg">
+  <link rel="icon" href="img/logo-longevity.png" type="image/png">
 
   <style>
     :root {
@@ -154,7 +155,7 @@
 
     .btn-gold {
       display: inline-flex; align-items: center; gap: 10px;
-      background: var(--accent-gold); color: var(--brand-teal-ink);
+      background: var(--accent-gold); color: var(--ink-900);
       padding: 18px 36px; border-radius: var(--radius-pill);
       font-family: var(--font-sans); font-size: 16px; font-weight: 600;
       border: none; cursor: pointer;
@@ -167,7 +168,7 @@
       background: var(--accent-gold-deep);
       transform: translateY(-2px);
       box-shadow: 0 12px 36px rgba(201,169,110,0.5);
-      color: var(--brand-teal-ink);
+      color: var(--ink-900);
     }
 
     /* ========== HERO ========== */
@@ -198,7 +199,7 @@
       font-family: var(--font-sans);
     }
     .eyebrow .dot {
-      width: 6px; height: 6px; background: var(--accent-gold);
+      width: 6px; height: 6px; background: var(--brand-teal);
       border-radius: 50%;
     }
     .hero h1 {
@@ -249,7 +250,7 @@
     }
     .micro-trust::before {
       content: ""; width: 8px; height: 8px; border-radius: 50%;
-      background: var(--accent-gold);
+      background: currentColor; opacity: 0.5;
     }
     .hero-visual {
       position: relative;
@@ -259,12 +260,12 @@
       border-radius: var(--radius-card);
       overflow: hidden;
       box-shadow: var(--shadow-hover);
-      aspect-ratio: 5/4;
+      aspect-ratio: 4/3;
       background: linear-gradient(135deg, var(--brand-teal) 0%, var(--brand-teal-ink) 100%);
     }
     .hero-visual img {
       width: 100%; height: 100%; object-fit: cover;
-      object-position: center 30%;
+      object-position: center top;
     }
     .hero-visual .credential-card {
       margin-top: 16px;
@@ -330,11 +331,11 @@
     .section-label {
       font-family: var(--font-sans);
       font-size: 13px; font-weight: 600;
-      color: var(--accent-gold-deep);
+      color: var(--brand-teal);
       letter-spacing: 2px; text-transform: uppercase;
       margin-bottom: 16px;
     }
-    .section-teal .section-label { color: var(--accent-gold); }
+    .section-teal .section-label { color: var(--brand-teal-soft); }
     .section-head h2 {
       font-family: var(--font-display);
       font-weight: 500;
@@ -370,7 +371,7 @@
     .problem-card .num {
       font-family: var(--font-display);
       font-size: 44px; font-weight: 500;
-      color: var(--accent-gold);
+      color: var(--neutral-white);
       line-height: 1;
       margin-bottom: 16px;
     }
@@ -417,13 +418,13 @@
       content: "";
       position: absolute; top: -80px; right: -80px;
       width: 240px; height: 240px;
-      background: radial-gradient(circle, rgba(201,169,110,0.22) 0%, rgba(201,169,110,0) 70%);
+      background: radial-gradient(circle, rgba(130,192,199,0.18) 0%, rgba(130,192,199,0) 70%);
       pointer-events: none;
     }
     .facts-head { margin-bottom: 28px; position: relative; }
     .facts-label {
       font-size: 12px; font-weight: 600;
-      color: var(--accent-gold);
+      color: var(--brand-teal-soft);
       letter-spacing: 2px; text-transform: uppercase;
       margin-bottom: 12px;
     }
@@ -445,7 +446,7 @@
       position: relative;
     }
     .facts-list li {
-      display: grid; grid-template-columns: 72px 1fr; gap: 16px;
+      display: grid; grid-template-columns: minmax(110px, auto) 1fr; gap: 20px;
       align-items: baseline;
     }
     .facts-num {
@@ -453,7 +454,7 @@
       font-weight: 600;
       font-size: 40px;
       line-height: 1;
-      color: var(--accent-gold);
+      color: var(--neutral-white);
       letter-spacing: -0.02em;
     }
     .facts-text {
@@ -468,7 +469,7 @@
       position: relative;
     }
     .facts-foot a {
-      color: var(--accent-gold);
+      color: var(--brand-teal-soft);
       text-decoration: underline;
     }
     .facts-foot a:hover { color: var(--neutral-white); }
@@ -542,8 +543,8 @@
       box-shadow: var(--shadow-card);
     }
     .doctor-info .eyebrow {
-      background: rgba(201,169,110,0.15);
-      color: var(--accent-gold-deep);
+      background: rgba(0,111,115,0.1);
+      color: var(--brand-teal);
     }
     .doctor-info h2,
     .doctor-info .doctor-name {
@@ -582,7 +583,7 @@
     }
     .credentials-list li::before {
       content: ""; position: absolute; left: 0; top: 8px;
-      width: 10px; height: 2px; background: var(--accent-gold);
+      width: 10px; height: 2px; background: var(--brand-teal);
     }
     .credentials-list strong { color: var(--ink-900); font-weight: 600; }
 
@@ -650,7 +651,7 @@
     .team-creds li:last-child { margin-bottom: 0; }
     .team-creds li::before {
       content: ""; position: absolute; left: 0; top: 9px;
-      width: 8px; height: 2px; background: var(--accent-gold);
+      width: 8px; height: 2px; background: var(--brand-teal);
     }
     .team-creds strong { color: var(--ink-900); font-weight: 600; }
     .team-cta {
@@ -680,7 +681,7 @@
     .process-step .step-num {
       font-family: var(--font-display);
       font-size: 15px; font-weight: 600;
-      color: var(--accent-gold-deep);
+      color: var(--brand-teal);
       letter-spacing: 2px; text-transform: uppercase;
       margin-bottom: 16px;
     }
@@ -709,7 +710,7 @@
     }
     .price-card {
       background: var(--neutral-white);
-      border: 2px solid var(--accent-gold);
+      border: 1px solid rgba(0,111,115,0.15);
       border-radius: var(--radius-card);
       padding: 40px;
       box-shadow: var(--shadow-card);
@@ -717,7 +718,7 @@
     }
     .price-card .tag {
       position: absolute; top: -14px; left: 32px;
-      background: var(--accent-gold); color: var(--brand-teal-ink);
+      background: var(--brand-teal-ink); color: var(--neutral-white);
       font-size: 12px; font-weight: 700;
       padding: 6px 16px; border-radius: var(--radius-pill);
       letter-spacing: 1.5px; text-transform: uppercase;
@@ -790,7 +791,7 @@
       background: var(--neutral-offwhite);
       padding: 24px; border-radius: var(--radius-card);
       margin-top: 24px;
-      border-left: 3px solid var(--accent-gold);
+      border-left: 3px solid var(--brand-teal);
     }
     .price-compare .comp-label {
       font-size: 13px; color: var(--ink-500);
@@ -826,8 +827,8 @@
       content: "";
       position: absolute; left: 0; top: 14px;
       width: 14px; height: 8px;
-      border-left: 2px solid var(--accent-gold-deep);
-      border-bottom: 2px solid var(--accent-gold-deep);
+      border-left: 2px solid var(--brand-teal);
+      border-bottom: 2px solid var(--brand-teal);
       transform: rotate(-45deg);
     }
 
@@ -881,8 +882,8 @@
     }
     .placeholder-tag {
       display: inline-block;
-      background: rgba(201,169,110,0.15);
-      color: var(--accent-gold-deep);
+      background: rgba(0,111,115,0.1);
+      color: var(--brand-teal);
       font-size: 11px; font-weight: 700;
       padding: 4px 10px; border-radius: var(--radius-pill);
       letter-spacing: 1px; text-transform: uppercase;
@@ -1072,7 +1073,7 @@
       font-size: 14px;
       transition: color .2s;
     }
-    footer a:hover { color: var(--accent-gold); }
+    footer a:hover { color: var(--brand-teal-soft); }
     .legal-bar {
       padding-top: 32px;
       border-top: 1px solid rgba(255,255,255,0.1);
@@ -1186,8 +1187,8 @@
     <div class="wrap">
       <div class="hero-copy">
         <div class="eyebrow"><span class="dot"></span>Programa 2026 &middot; 100 cupos disponibles</div>
-        <h1>Cirugía de prótesis de <em>cadera y rodilla</em> con el Dr. Rodrigo Mardones, Fellowship Mayo Clinic.</h1>
-        <p class="sub">Operado por un equipo con fellowships en Hospital for Special Surgery (Nueva York), McGill y Clínica Universidad de Navarra. Cirugía en Clínica Monteblanco, Lo Barnechea. Evaluación previa sin costo para confirmar si eres candidato.</p>
+        <h1>Cirugía de prótesis de <em>cadera y rodilla</em>. Equipo liderado por el Dr. Rodrigo Mardones, Fellowship Mayo Clinic.</h1>
+        <p class="sub">Cinco traumatólogos con fellowships en Mayo Clinic, Hospital for Special Surgery (Nueva York), McGill y Clínica Universidad de Navarra. Cirugía en Clínica Monteblanco, Lo Barnechea. Evaluación previa sin costo para confirmar si eres candidato.</p>
 
         <div class="hero-metrics">
           <div class="metric">
@@ -1276,11 +1277,11 @@
           </div>
           <ul class="facts-list">
             <li><span class="facts-num">5</span><span class="facts-text">traumatólogos especialistas en cadera y rodilla</span></li>
-            <li><span class="facts-num">3.000+</span><span class="facts-text">pacientes dados de alta por el Dr. Mardones</span></li>
-            <li><span class="facts-num">20+</span><span class="facts-text">años de experiencia del Dr. Mardones en artroplastía</span></li>
             <li><span class="facts-num">4</span><span class="facts-text">Fellowships internacionales: Mayo Clinic, HSS, McGill, Navarra</span></li>
+            <li><span class="facts-num">20+</span><span class="facts-text">años de experiencia del Dr. Mardones en artroplastía</span></li>
+            <li><span class="facts-num">3.000+</span><span class="facts-text">pacientes dados de alta por el equipo</span></li>
           </ul>
-          <p class="facts-foot">Cifras verificables en <a href="https://drrodrigomardones.cl" target="_blank" rel="noopener">drrodrigomardones.cl</a> y <a href="https://www.longevityforcell.cl/especialistas-medicos/" target="_blank" rel="noopener">longevityforcell.cl</a></p>
+          <p class="facts-foot">Credenciales verificables en <a href="https://www.longevityforcell.cl/especialistas-medicos/" target="_blank" rel="noopener">longevityforcell.cl</a></p>
         </aside>
 
         <div class="solution-text">
